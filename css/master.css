@@ -1,0 +1,72 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "Yummo";
+    src: url('../fonts/Yummo/Yummo_Regular.otf');
+}
+
+body {
+    background-color: #d8d9dd;
+}
+.wrapper {
+    width: 80%;
+    margin:auto;
+}
+h1 {
+    color: #24295f;
+    float: right;
+    font-size: 40px;
+    padding: 230px 0 230px 0;
+}
+h2 {
+    font-size: 30px;
+}
+h1, h2, h3, nav a {
+    font-family: Yummo;
+}
+
+/* Navigation Bar */
+.flex-nav ul {
+   display: flex;
+}
+
+.logo {
+    height: 150px;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+}
+
+nav li a {
+    line-height: 150px;
+    text-decoration: none;
+    color: #1d6e38;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+ #main {
+     display: flex;
+}
+#main img {
+    height: 680px;
+}
+
+#main ul{
+    display: flex;
+}
+#main .social img {
+    height: 40px;
+    padding: 5px;
+}
+#Teachers img {
+    height: 70px;
+}
