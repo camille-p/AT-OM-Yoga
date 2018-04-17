@@ -20,16 +20,19 @@ body {
     margin:auto;
 }
 h1 {
-    color: #24295f;
-    float: right;
     font-size: 40px;
-    padding: 230px 0 230px 0;
+padding-bottom: 320px;
 }
 h2 {
     font-size: 30px;
+    color: #1d6e38;
+    padding: 10px;
 }
 h1, h2, h3, nav a {
     font-family: Yummo;
+}
+h1, body {
+    color: #24295f;
 }
 
 /* Navigation Bar */
@@ -39,6 +42,7 @@ h1, h2, h3, nav a {
 
 .logo {
     height: 150px;
+    padding-top: 15px;
 }
 
 nav li {
@@ -53,20 +57,54 @@ nav li a {
     text-transform: uppercase;
     font-size: 22px;
 }
+
+.border {
+    border-bottom: 1px solid #24295f;
+}
+
+/* Header */
  #main {
      display: flex;
+     height: 680px;
+     align-items:flex-end;
 }
 #main img {
     height: 680px;
+    margin-left: 10px;
 }
 
 #main ul{
     display: flex;
+    margin: 0 0 20px 80px;
 }
+
 #main .social img {
-    height: 40px;
+    height: 50px;
     padding: 5px;
+    
 }
+.flex {
+    flex-direction:column;
+    display: flex;
+}
+
+/* About Us Page */
+#About {
+    height: 700px;
+    background-color: grey; 
+    display: flex;
+}
+#About img {
+    height: 600px;
+    border-radius: 50%;
+    margin: 50px;
+}
+.aboutUs {
+    padding-top:250px;
+    width: 500px;
+}
+
+/* Teachers Page */
 #Teachers img {
     height: 70px;
 }
