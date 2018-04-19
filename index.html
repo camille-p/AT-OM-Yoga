@@ -8,6 +8,8 @@
 <meta name= "keywords" content="HTML, CSS, JavaScript">
 <meta name="author" content="Camille Puyo">
 <script src="https://use.fontawesome.com/9272d783f7.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="responsiveslides.min.js"></script>
 <link type="text/css" rel="stylesheet" href="css/reset.css"/>
 <link type="text/css" rel="stylesheet" href="css/master.css"/>
 </head>
@@ -18,28 +20,28 @@
     <div class="wrapper">
     <nav class="flex-nav">
         <ul>
-            <li class="border"><a href="#About">About Us</a></li>
-            <li class="border"><a href="#Teachers">Teachers</a></li>
-            <li class="border"><a href="#Prices">Prices</a></li>
             <li><img src="images/Logo.png" alt="logo" class="logo"/></li>
-            <li class="border"><a href="#Classes">Classes</a></li>
-            <li class="border"><a href="#Gallery">Gallery</a></li>
-            <li class="border"><a href="#Contact">Contact Us</a></li>
+            <li><a href="#About">About Us</a></li>
+            <li><a href="#Teachers">Teachers</a></li>
+            <li><a href="#Prices">Prices</a></li>
+            <li><a href="#Classes">Classes</a></li>
+            <li><a href="#Gallery">Gallery</a></li>
+            <li><a href="#Contact">Contact Us</a></li>
         </ul>
     </nav>  
         </div>
   <div id="main">
 
-        <img src="images/Main.png" alt="woman doing yoga"/>  
+        <img class="computer" src="images/Main.png" alt="woman doing yoga"/>  
     <div class="flex">  
         <h1>Feel right at home, learning<br/> yoga in your mother tongue.</h1> 
-   
+   <img class="mobile" src="images/Main2.png" alt="woman doing yoga"/>
     <footer class="social">
     <ul>
         <li><img src="images/Facebook.png" alt="Facebook icon"/></li>
         <li><img src="images/Twitter.png" alt="Twitter icon"/></li>
         <li><img src="images/Instagram.png" alt="Instagram icon"/></li>
-        <li><img src="images/Pinterest.png" alt="Pinterest icon"/></li>
+        <li><img src="images/Snapchat.png" alt="Snapchat icon"/></li>
         </ul>
     </footer>
         </div>
@@ -52,36 +54,45 @@
         <img src="images/About.jpg" alt="couple doing yoga"/>
     <div class="aboutUs">
         <h2>About Us</h2>
-    <p>In our studio, classes take place in different languages. Newcomers to Ireland who don’t feel comfortable with English yet, or homesick expatriates missing their native language, you are all welcome to our practice. The languages we offer at the moment are French, Brazilian Portuguese, German, Spanish, and Irish and English as we are in Ireland after all!
-We also know what it feels like being a student and trying to decide between yoga classes or groceries, which is why we offer you guys discounts!</p>
+    <p>In our studio, classes take place in different languages. Newcomers to Ireland who don’t feel comfortable with English yet, or homesick expatriates missing their native language, you are all welcome to our practice. <br>The languages we offer at the moment are French, Brazilian Portuguese, German, Spanish, and Irish and English as we are in Ireland after all!
+<br>We also know what it feels like being a student and trying to decide between yoga classes or groceries, which is why we offer you guys discounts!</p>
        
         </div>
     </section>
     
      <div class="wrapper">
     <section id="Teachers">
+       
         <h3>Martine Dupont</h3>
         <img src="images/Martine.jpg" alt="Martine"/>
         <p>Bonjour! My name is Martine, I've been teaching yoga for 10 years in France and decided to move to Dublin 2 years ago!</p>
-        <h3>Enja Senkpiel</h3>
+  
+     <h3>Enja Senkpiel</h3>
         <img src="images/Enja.jpg" alt="Enja"/>
         <p>Hallo! I'm Enja, a German loving yoga and Ireland! Come join my class, we'll have lots of fun!</p>
+    
         <h3>Alfonso Flores</h3>
         <img src="images/Alfonso.jpg" alt="Alfonso"/>
         <p>¡Hola! I'm Alfonso. I've been travelling the world, teaching yoga, and ended up moving to Dublin a year ago, loving it so far!</p>
-        <h3>Vanessa Oliveira</h3>
+
+               <h3>Vanessa Oliveira</h3>
         <img src="images/Vanessa.jpg" alt="Vanessa"/>
         <p>Olá! My name is Vanessa, a Brazilian lucky enough to have her dream job for the past 3 years!</p>
-        <h3>Emily Rogers</h3>
+ 
+            <h3>Emily Rogers</h3>
         <img src="images/Emily.jpg" alt="Emily"/>
         <p>Hello! I'm Emily and I'm passionate about yoga and meditation and love meeting new students!</p>
-        <h3>Aoife O'Connor</h3>
+    
+            <h3>Aoife O'Connor</h3>
         <img src="images/Aoife.jpg" alt="Aoife"/>
         <p>Dia dhuit! My name is Aoife, I've been a yoga teacher for 5 years, can't wait to start working with you!</p>
+       
+        
     </section>
     
     <section id="Prices">
         <h2>Our Prices</h2>
+        <div class="price">
     <div id="DropIn">
         <p>Drop In</p>
         <p>1 hour</p>
@@ -102,6 +113,7 @@ We also know what it feels like being a student and trying to decide between yog
         <p>€800</p>
         <p>€700 Students</p>
         </div>
+            </div>
     </section>
     
     <section id="Classes">
@@ -109,12 +121,12 @@ We also know what it feels like being a student and trying to decide between yog
         <table>
             <tr>
                 <th>Timetable</th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-                <th>Saturday</th>
+                <th>Monday <br/>Beginners</th>
+                <th>Tuesday <br/>Sun Salutation</th>
+                <th>Wednesday <br/>Advanced</th>
+                <th>Thursday <br/>Vinyasa</th>
+                <th>Friday<br/>Ashtanga</th>
+                <th>Saturday<br/>Flow</th>
             </tr>
             <tr>
              <th>9am - 10am</th>   
@@ -210,5 +222,6 @@ We also know what it feels like being a student and trying to decide between yog
         
     </footer>
         </div>
+   
     </body>
 </html>
