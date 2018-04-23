@@ -80,7 +80,7 @@ nav li a {
 }
 .computer {
     height: 680px;
-    margin-left: 20px;
+    margin: 0 0 20px 20px;
 }
 
 #main ul{
@@ -203,7 +203,7 @@ h1 {
 
 /* About Us Page */
 #About {
-    height: 700px;
+    min-height: 700px;
     background-color: #fff; 
     display: flex;
 }
@@ -220,7 +220,7 @@ h1 {
 /* Tablet */  
 @media screen and (max-width: 768px) {
     #About {
-    height: 450px;
+    min-height: 450px;
 }
 #About img {
     height: 350px;
@@ -238,7 +238,7 @@ h1 {
 
 @media screen and (max-width: 480px) {
     #About {
-    height: 800px;
+    min-height: 800px;
     flex-direction: column;
        
 }
@@ -316,6 +316,10 @@ strong {
 
 
 /* Classes Page */
+#Classes {
+    background-color: #eadada;
+    min-height: 450px;
+}
 tr, td, th {
     border: 1px solid #24295f;
     text-align: center;
@@ -329,8 +333,11 @@ th {
     display: none;
 }
 
-/* Tablet and Mobile */ 
+/* Tablet */ 
 @media screen and (max-width: 768px) {
+    #Classes {
+      min-height: 1400px;
+}
     .computertimetable {
         display: none;
     }
@@ -347,4 +354,35 @@ td, th {
     width: 120px;
     }
     
+}
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+#Classes {
+      min-height: 2300px;
+}
+
+}
+
+/* Gallery Page */
+#Gallery img {
+    height: 600px;
+}
+
+/* Contact Page */
+#Contact ul{
+    display: flex;
+}
+
+.media img {
+    height: 50px;
+    padding: 5px;
+}
+
+.contactForm a {
+    text-decoration: none;
+    color: #128944;
+}
+.contactForm {
+    padding: 25px;
 }
