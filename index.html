@@ -13,6 +13,7 @@
 <script src="responsiveslides.min.js"></script>
 <link type="text/css" rel="stylesheet" href="css/reset.css"/>
 <link type="text/css" rel="stylesheet" href="css/master.css"/>
+<link type="text/css" rel="stylesheet" href="css/lightbox.css"/>
 </head>
     
 <body>
@@ -27,7 +28,11 @@
             <li><a href="#Prices">Prices</a></li>
             <li><a href="#Classes">Classes</a></li>
             <li><a href="#Gallery">Gallery</a></li>
-            <li><a href="#Contact">Contact Us</a></li>
+            <li class="dropdown"><a href="#Contact">Contact Us</a>
+  <div class="dropdown-content">    
+<a href="#signUp">Sign Up</a>
+  </div>
+  </li>
         </ul>
     </nav>  
         </div>
@@ -49,9 +54,8 @@
        </div>
     </header>
     
-    
+    <div class="skew">
     <section id="About">
-      
         <img src="images/About.jpg" alt="couple doing yoga"/>
     <div class="aboutUs">
         <h2>About Us</h2>
@@ -59,41 +63,51 @@
 <br>We also know what it feels like being a student and trying to decide between yoga classes or groceries, which is why we offer you guys discounts!</p>
        
         </div>
+         
     </section>
-    
-     <div class="wrapper">
+    </div>
+    <div class="wrapper">
+    <div class="skew">
+     
     <section id="Teachers">
        <h2>Meet Our Teachers</h2>
+         <div class="flip-container">
+             <div class="card">
         <h3>Martine Dupont</h3>
-        <img src="images/French.jpg" alt="Martine, French Teacher"/>
-        <p>Bonjour! My name is Martine, I've been teaching yoga for 10 years in France and decided to move to Dublin 2 years ago!</p>
+        <div class="front"><img src="images/French.jpg" alt="Martine, French Teacher"/></div>
+        <div class="back"><p>Bonjour! My name is Martine, I've been teaching yoga for 10 years in France and decided to move to Dublin 2 years ago!</p></div>
   
      <h3>Enja Senkpiel</h3>
-        <img src="images/German.jpg" alt="Enja, German Teacher"/>
-        <p>Hallo! I'm Enja, a German loving yoga and Ireland! Come join my class, we'll have lots of fun!</p>
+        <div class="front"><img src="images/German.jpg" alt="Enja, German Teacher"/></div>
+        <div class="back"><p>Hallo! I'm Enja, a German loving yoga and Ireland! Come join my class, we'll have lots of fun!</p></div>
     
         <h3>Alfonso Flores</h3>
-        <img src="images/Spanish.jpg" alt="Alfonso, Spanish Teacher"/>
-        <p>¡Hola! I'm Alfonso. I've been travelling the world, teaching yoga, and ended up moving to Dublin a year ago, loving it so far!</p>
+        <div class="front"><img src="images/Spanish.jpg" alt="Alfonso, Spanish Teacher"/></div>
+        <div class="back"><p>¡Hola! I'm Alfonso. I've been travelling the world, teaching yoga, and ended up moving to Dublin a year ago, loving it so far!</p></div>
 
                <h3>Vanessa Oliveira</h3>
-        <img src="images/Brazilian.jpg" alt="Vanessa, Brazilian Teacher"/>
-        <p>Olá! My name is Vanessa, a Brazilian lucky enough to have her dream job for the past 3 years!</p>
+        <div class="front"><img src="images/Brazilian.jpg" alt="Vanessa, Brazilian Teacher"/></div>
+        <div class="back"><p>Olá! My name is Vanessa, a Brazilian lucky enough to have her dream job for the past 3 years!</p></div>
  
             <h3>Emily Rogers</h3>
-        <img src="images/English.jpg" alt="Emily, English Teacher"/>
-        <p>Hello! I'm Emily and I'm passionate about yoga and meditation and love meeting new students!</p>
+        <div class="front"><img src="images/English.jpg" alt="Emily, English Teacher"/></div>
+        <div class="back"><p>Hello! I'm Emily and I'm passionate about yoga and meditation and love meeting new students!</p></div>
     
             <h3>Aoife O'Connor</h3>
-        <img src="images/Irish.jpg" alt="Aoife, Irish Teacher"/>
-        <p>Dia dhuit! My name is Aoife, I've been a yoga teacher for 5 years, can't wait to start working with you!</p>
-       
+        <div class="front"><img src="images/Irish.jpg" alt="Aoife, Irish Teacher"/></div>
+        <div class="back"><p>Dia dhuit! My name is Aoife, I've been a yoga teacher for 5 years, can't wait to start working with you!</p> </div>
+        </div>
+             </div>
+             </section>
+        </div>
+    </div>
+    <div class="skew">
         
-    </section>
-    
     <section id="Prices">
+        <div class="wrapper">
         <h2>Our Prices</h2>
         <div class="price">
+            
     <div id="DropIn">
         <p><strong>Drop In</strong></p>
         <p>1 hour</p>
@@ -115,8 +129,11 @@
         <p>€700 Students</p>
         </div>
             </div>
+            </div>
     </section>
     </div>
+        
+    
     <section id="Classes">
         <div class="wrapper">
         <h2>Classes</h2>
@@ -433,23 +450,25 @@
             </table>
                 </div>
         </div>
+        </div>
     </section>
-    
+    <div class="wrapper">
     <section id="Gallery">
         <h2>Gallery</h2>
-        <img src="images/DownwardDog.jpg" alt="Downward Facing Dog Yoga Pose"/>
-        <img src="images/UpwardDog.jpg" alt="Upward Facing Dog Pose"/>
-        <img src="images/YogaFold.jpg" alt="Forward Bend Yoga Pose"/>
-        <img src="images/YogaPose.jpg" alt="Woman doing yoga with a circle"/>
-        <img src="images/YogaStretch.jpg" alt="Man stretching"/>
-        <img src="images/PlankPose.jpg" alt="Plank Pose"/>
-        <img src="images/ChildPose.jpg" alt="Child Pose"/>
-        <img src="images/womanyoga.jpg" alt="Woman doing Yoga"/>
-        <img src="images/YogaBack.jpg" alt="Yoga pose on back"/>
-        <img src="images/YogaLeg.jpg" alt="Yoga stretch of leg"/>
+        <a href="images/DownwardDog.jpg" data-lightbox="yoga"><img src="images/DownwardDog.jpg" alt="Downward Facing Dog Pose"/></a>
+        <a href="images/UpwardDog.jpg" data-lightbox="yoga"><img src="images/UpwardDog.jpg" alt="Upward Facing Dog Pose"/></a>
+        <a href="images/AdvancedPose.jpg" data-lightbox="yoga"><img src="images/AdvancedPose.jpg" alt="Advanced Pose"/></a>
+        <a href="images/YogaPose.jpg" data-lightbox="yoga"><img src="images/YogaPose.jpg" alt="Yoga Pose"/></a>
+        <a href="images/YogaStretch.jpg" data-lightbox="yoga"><img src="images/YogaStretch.jpg" alt="Time To Stretch"/></a>
+        <a href="images/PlankPose.jpg" data-lightbox="yoga"><img src="images/PlankPose.jpg" alt="Plank Pose"/></a>
+        <a href="images/ChildPose.jpg" data-lightbox="yoga"><img src="images/ChildPose.jpg" alt="Child Pose"/></a>
+        <a href="images/YogaBack.jpg" data-lightbox="yoga"><img src="images/YogaBack.jpg" alt="Back Release"/></a>
+        <a href="images/Meditation.jpg" data-lightbox="yoga"><img src="images/Meditation.jpg" alt="Meditation"/></a>
+       
     </section>
-    
+     </div>
     <footer id="Contact">
+        <div class="wrapper">
         <h2>Contact Us</h2>
         <section class="media">
         <ul>
@@ -478,10 +497,11 @@
     ">
     Any Question? Click Here!
     </a>
+            
         </section>
-        
-    </footer>
         </div>
-   
+    </footer>
+        
+   <script src="js/lightbox-plus-jquery.js"></script>
     </body>
 </html>
