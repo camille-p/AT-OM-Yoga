@@ -51,7 +51,7 @@ p {
     -webkit-transform: skewY(5deg); /* Safari */
     transform: skewY(5deg); /* Standard syntax */
 }
-#About img, .aboutUs, #Teachers h2, #Teachers h3,  #Teachers p, #Prices h2, #Prices p {
+#About img, .aboutUs, #Teachers h2, #Teachers h3,  #Teachers p, #Prices h2, #Prices p, #Prices .Sign {
    -ms-transform: skewY(-5deg); /* IE 9 */
     -webkit-transform: skewY(-5deg); /* Safari */
     transform: skewY(-5deg); /* Standard syntax */
@@ -75,6 +75,7 @@ p {
 nav li {
     flex: 1;
     text-align: center;
+    position: relative;
 }
 
 nav li a {
@@ -83,6 +84,19 @@ nav li a {
     color: #128944;
     text-transform: uppercase;
     font-size: 22px;
+}
+nav a:before {
+    content:"";
+    display: block;
+    height: 2px;
+    background-color: #24295f;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 300ms;
+}
+nav a:hover:before {
+    width: 100%;
 }
 
 .dropdown {
@@ -215,6 +229,9 @@ h1 {
 }
     nav li {
         padding-bottom: 20px;
+    }
+    nav a::before {
+        display: none;
     }
 
  #main .computer, .dropdown-content a {
@@ -377,11 +394,11 @@ h1 {
 
 /* Prices Page */
 #Prices {
-    height: 370px;
+    height: 550px;
     background-color: #ece036
 }
 #Prices h2 {
-    margin-bottom: 50px;
+    margin-bottom: 90px;
 }
 .price {
    display: flex;
@@ -406,8 +423,25 @@ strong {
     font-weight: bold;
 }
 
+.Sign {
+    background-color: #128944;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px;
+    cursor: pointer;
+}
+#Prices .Sign {
+    margin-top: 100px;
+}
+
 /* Tablet */  
 @media screen and (max-width: 768px) {
+    
  #DropIn, #Monthly, #Yearly {
      margin: 20px;
      padding: 30px;
@@ -416,13 +450,11 @@ strong {
     margin-bottom: 20px;
 }
     #DropIn, #Monthly, #Yearly {
-  
     height: 200px;
     -webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
     transition: height 2s;
 }
 #DropIn:hover, #Monthly:hover, #Yearly:hover {
-   
     height: 230px;
 }
     
@@ -441,6 +473,9 @@ strong {
     #DropIn, #Monthly, #Yearly {
         margin: 20px;
     }
+    #Prices .Sign {
+    margin-top: 30px;
+}
 }
    
 
@@ -449,7 +484,7 @@ strong {
 
 /* Classes Page */
 #Classes {
-    background-color: #eadada;
+    
     min-height: 500px;
     
 }
@@ -505,6 +540,10 @@ td, th {
 
 
 /* Gallery Page */
+#Gallery {
+    background-color: #eadada;
+    padding: 50px 0;
+}
 #Gallery img {
     height: 250px;
 }
