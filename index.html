@@ -20,19 +20,21 @@
     
     <header>
     <div class="wrapper">
-    <nav class="flex-nav">
+    <nav class="flex-nav" id="Flexnav">
         <ul>
-            <li><img src="images/Logo.png" alt="logo" class="logo"/></li>
+            <li><a href="#Flexnav"><img src="images/Logo.png" alt="logo" class="logo"/></a></li>
+            
             <li><a href="#About">About Us</a></li>
             <li><a href="#Teachers">Teachers</a></li>
             <li><a href="#Prices">Prices</a></li>
             <li><a href="#Classes">Classes</a></li>
             <li><a href="#Gallery">Gallery</a></li>
             <li class="dropdown"><a href="#Contact">Contact Us</a>
+                
   <div class="dropdown-content">    
 <a href="#signUp">Sign Up</a>
   </div>
-  </li>
+  
         </ul>
     </nav>  
         </div>
@@ -70,29 +72,38 @@
     <div class="skew">
      
     <section id="Teachers">
-       <h2>Meet Our Teachers</h2>
-         <div class="flip-container">
-             <div class="card">
-        <h3>Martine Dupont</h3>
-        <div class="front"><img src="images/French.jpg" alt="Martine, French Teacher"/></div>
+       <h2>Meet Our Teachers</h2>  
+        <div class="teachers">
+        <div class="french"><h3>Martine Dupont</h3>
+       <div class="front"><img src="images/French.jpg" alt="Martine, French Teacher"/></div>
         <div class="back"><p>Bonjour! My name is Martine, I've been teaching yoga for 10 years in France and decided to move to Dublin 2 years ago!</p></div>
-  
+        </div>
+        
+       <div class="german"> 
      <h3>Enja Senkpiel</h3>
         <div class="front"><img src="images/German.jpg" alt="Enja, German Teacher"/></div>
         <div class="back"><p>Hallo! I'm Enja, a German loving yoga and Ireland! Come join my class, we'll have lots of fun!</p></div>
-    
+        </div>
+        
+        <div class="spanish">
         <h3>Alfonso Flores</h3>
         <div class="front"><img src="images/Spanish.jpg" alt="Alfonso, Spanish Teacher"/></div>
         <div class="back"><p>¡Hola! I'm Alfonso. I've been travelling the world, teaching yoga, and ended up moving to Dublin a year ago, loving it so far!</p></div>
-
+        </div>
+        
+        <div class="portuguese">
                <h3>Vanessa Oliveira</h3>
         <div class="front"><img src="images/Brazilian.jpg" alt="Vanessa, Brazilian Teacher"/></div>
         <div class="back"><p>Olá! My name is Vanessa, a Brazilian lucky enough to have her dream job for the past 3 years!</p></div>
- 
+        </div>
+        
+        <div class="english">
             <h3>Emily Rogers</h3>
         <div class="front"><img src="images/English.jpg" alt="Emily, English Teacher"/></div>
         <div class="back"><p>Hello! I'm Emily and I'm passionate about yoga and meditation and love meeting new students!</p></div>
-    
+        </div>
+        
+        <div class="irish">
             <h3>Aoife O'Connor</h3>
         <div class="front"><img src="images/Irish.jpg" alt="Aoife, Irish Teacher"/></div>
         <div class="back"><p>Dia dhuit! My name is Aoife, I've been a yoga teacher for 5 years, can't wait to start working with you!</p> </div>
@@ -100,7 +111,8 @@
              </div>
              </section>
         </div>
-    </div>
+        </div>
+    
     <div class="skew">
         
     <section id="Prices">
@@ -507,5 +519,6 @@
     </footer>
         
    <script src="js/lightbox-plus-jquery.js"></script>
+   
     </body>
 </html>
