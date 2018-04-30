@@ -21,7 +21,7 @@ body {
 }
 h1 {
     font-size: 40px;
-padding-bottom: 320px;
+padding-bottom: 250px;
 }
 h2, h3 {
     color: #128944;
@@ -66,9 +66,6 @@ p {
 .flex-nav ul {
    display: flex;
 }
-.flex-nav .icon {
-    display: none;
-}
 
 .logo {
     height: 150px;
@@ -108,7 +105,7 @@ nav a:hover:before {
   text-align: center;
 }
 
-ul li a:hover, .dropdown:hover .dropdown {
+nav ul li a:hover, .dropdown:hover .dropdown {
   color: #1e6e38;
   }
 
@@ -142,20 +139,24 @@ li.dropdown {
      display: flex;
      height: 680px;
      align-items: flex-end;
+     width: 90%;
+     margin: auto;
 }
 .computer {
-    height: 680px;
-    margin: 0 0 20px 20px;
+    height: 650px;
+    margin-bottom: 20px;
 }
 
 #main ul{
     display: flex;
-    margin: 0 0 20px 80px;
-}
+    margin: 0 0 40px 80px;
+}   
+
 
 #main .social img {
     height: 60px;
     padding: 5px;
+    margin: 10px;
     
 }
 .mobile {
@@ -172,7 +173,7 @@ li.dropdown {
         height: 100px;
         padding: 10px;
     }
-.flex-nav ul {
+nav ul {
         display: flex;
     }
 nav li a {
@@ -187,11 +188,11 @@ nav li {
 }
 #main {
     height: 400px;
+    width: 100%;
     }
  #main .computer {
-    display: inline;
      height: 400px;
-     margin-bottom: 20px;
+     margin: 0 0 20px 20px;
      
 } 
   #main .mobile {
@@ -200,17 +201,17 @@ nav li {
     
 h1 {
     font-size: 22px;
-    padding:0 20px 150px 0;
+    padding:0 30px 150px 0;
       
 } 
     #main .social img {
     height: 40px;
-    padding: 5px;
+        margin: 2px;
     
 }
     #main ul{
     display: flex;
-    margin: 0 0 20px 40px;
+    margin: 0 0 20px 30px;
 }
     
 }
@@ -221,21 +222,21 @@ h1 {
         height: 80px;
         padding: 10px;
     }
-  .flex-nav ul {
+ nav ul {
       display: flex;
       flex-direction: column;
         height: 350px;
     }
     
-     nav li a {
+ nav li a {
     line-height: 20px;
     font-size: 18px;
 }
-    nav li {
+nav li {
         padding-bottom: 20px;
         }
     
-    nav a::before {
+nav a::before {
         display: none;
     } 
 
@@ -252,7 +253,7 @@ h1 {
 
 #main {
      display: flex;
-     height: 500px;
+     min-height: 400px;
      flex-direction: column;
     
 }  
@@ -289,7 +290,7 @@ h1 {
     margin: 50px;
 }
 .aboutUs {
-    padding-top:250px;
+    padding-top:200px;
     width: 500px;
 }
 #About p {
@@ -299,15 +300,15 @@ h1 {
 /* Tablet */  
 @media screen and (max-width: 768px) {
     #About {
-    min-height: 550px;
+    min-height: 500px;
 }
 #About img {
-    height: 350px;
-    width: 350px;
-    margin: 40px 20px 40px 10px;
+    height: 320px;
+    width: 320px;
+    margin: 60px 20px 20px 10px;
 } 
     .aboutUs {
-    padding-top: 20px;
+    padding-top: 40px;
     width: 400px;
 }
     
@@ -320,21 +321,21 @@ h1 {
     min-height: 850px;
     flex-direction: column;
        
+       
 }
-    #About img, .aboutUs {
-     margin: 0 auto;
-    }
-
   
  #About img {
      height: 300px;
      width: 300px;
      padding: 20px;
+      margin: 0 auto;
+     margin-top: 10px;
 
     }
     .aboutUs {
     padding:20px;
-        width: 300px;
+    width: 300px;
+        margin: 0 auto;
 
 }
  } 
@@ -372,6 +373,15 @@ h1 {
     width: 200px;   
 }  
 }
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+  #Teachers h2 {
+    padding-bottom: 50px;
+}  
+}
+
+
 
 /* Prices Page */
 #Prices {
@@ -419,7 +429,7 @@ strong {
     cursor: pointer;
 }
 .Sign:hover {
-    opacity: 0.5;
+    opacity: 0.7;
 }
 #Prices .Sign {
     margin-top: 100px;
@@ -491,7 +501,7 @@ th {
     .mobiletimetable {
     display: inline;
     }
-    .monday, .tuesday, .wednesday, .thursday, .friday, .saturday {
+    .weekday {
         display: flex;
         flex-wrap: wrap;
         
@@ -538,6 +548,9 @@ td, th {
 #Contact {
     background-color: #24295f;
 }
+#Contact p {
+    color: #e8e9eb
+}
 
 #Contact ul{
     display: flex;
@@ -555,14 +568,79 @@ td, th {
 .contactForm {
     padding: 25px;
 }
-    
-    #main .media img {
-    height: 45px;
-    margin: 15px; 
-       
-}
- #main ul{
+.flex-footer {
     display: flex;
-    margin: 20px 0 20px 40px;
-}   
+    flex-direction: row;
+    padding: 20px 0;
+}
+.address, .open, #googleMap, .media {
+    padding: 15px;
+    flex: 1;
+}
 
+#googleMap {
+    width: 300px;
+    height: 300px;
+}
+
+
+/*
+
+#anchormenu {
+  position: fixed;
+  top: 160px;
+  right: 50px;
+  z-index: 999;
+  transition: all ease .3s;
+  width: 200px;
+  overflow: visible;
+}
+  
+ #anchormenu li {
+    transition: all ease 0.3s;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 200px;
+    float: right;
+    clear: both;
+}
+   #anchormenu li .active 
+      .btn {
+        color: blue;
+        background-color: black;
+        box-shadow: none;
+      }
+   
+ #anchormenu li  .active:hover {
+      width: 200px;
+}
+  #anchormenu li .btn {
+        color: blue;
+        background-color: black;
+        box-shadow: none;
+      }
+  
+  #anchormenu .btn {
+    border: 0 solid blue;
+    border-radius: 50%;
+    color: blue;
+    background: #c4c4c4;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 1;
+    font-size: 14px;
+    padding: 15px 35px;
+    transition: all ease 0.3s;
+    &:hover {
+      color: blue;
+      background-color: black;
+    }
+}
+
+#anchormenu.hide {
+  overflow: hidden;
+  width: 4px;
+  display: block;
+}*/
