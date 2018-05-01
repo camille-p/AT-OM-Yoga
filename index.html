@@ -9,8 +9,10 @@
 ">
 <meta name="author" content="Camille Puyo">
 <script src="https://use.fontawesome.com/9272d783f7.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="responsiveslides.min.js"></script>
+
 <link type="text/css" rel="stylesheet" href="css/reset.css"/>
 <link type="text/css" rel="stylesheet" href="css/master.css"/>
 <link type="text/css" rel="stylesheet" href="css/lightbox.css"/>
@@ -20,9 +22,15 @@
     
     <header>
     <div class="wrapper">
-    <nav class="flex-nav">
-        <ul>
-            <li><img src="images/Logo.png" alt="logo" class="logo"/></li>
+      
+    <nav class="flex-nav" id="myTopnav">
+       
+       <div class="menu-icon">
+            
+           <i class="fa fa-bars fa-2x"></i>
+        </div>
+    <a href="#myTopnav"><img src="images/Logo.png" alt="logo" class="logo"/></a>
+        <ul> 
             <li><a href="#About">About Us</a></li>
             <li><a href="#Teachers">Teachers</a></li>
             <li><a href="#Prices">Prices</a></li>
@@ -32,24 +40,25 @@
   <div class="dropdown-content">    
 <a href="#signUp">Sign Up</a>
   </div>
-     </li> 
-     </ul>
+     </li>
+       </ul>
     </nav>                 
   </div>
+       
   <div id="main">
 
         <img class="computer" src="images/Main.png" alt="woman doing yoga"/>  
     <div class="flex">  
         <h1>Feel right at home, learning<br/> yoga in your mother tongue.</h1> 
    <img class="mobile" src="images/Main2.png" alt="woman doing yoga"/>
-    <footer class="social">
+    <div class="social">
     <ul>
         <li><img src="images/Facebook.png" alt="Facebook icon"/></li>
         <li><img src="images/Twitter.png" alt="Twitter icon"/></li>
         <li><img src="images/Instagram.png" alt="Instagram icon"/></li>
         <li><img src="images/Snapchat.png" alt="Snapchat icon"/></li>
         </ul>
-    </footer>
+    </div>
         </div>
        </div>
         <!--<nav id="anchormenu" class="hide">
@@ -103,9 +112,9 @@
         </div>
         
         <div>
-               <h3>Vanessa Oliveira</h3>
-        <img src="images/Brazilian.jpg" alt="Vanessa, Brazilian Teacher"/>
-        <p>Olá! My name is Vanessa, a Brazilian lucky enough to have her dream job for the past 3 years!</p>
+               <h3>Paula Oliveira</h3>
+        <img src="images/Brazilian.jpg" alt="Paula, Brazilian Teacher"/>
+        <p>Olá! My name is Paula, a Brazilian lucky enough to have her dream job for the past 3 years!</p>
         </div>
         
         <div>
@@ -495,7 +504,6 @@
     </section>
      
     <footer id="Contact">
-        
         <div class="wrapper">
             
             <div class="flex-footer">
@@ -504,7 +512,7 @@
         <h3>Contact Us</h3>
             <p>18 Temple Ln S, Temple Bar, Dublin 2</p>
             <p>+353 (01) 461 2811</p>
-            <p>@ atomyoga@gmail.com</p>
+            <p>@ AtOmYoga@gmail.com</p>
                 
              <div id="googleMap">
         </div>
@@ -512,6 +520,7 @@
             <div class="open">
             <h3>Opening Hours</h3>
                 <p>Monday-Saturday: 9am- 8pm</p>
+                <p>Closed Sundays</p>
             </div>
                 
         <div class="media">
@@ -523,9 +532,8 @@
         <li><img src="images/Snapchat.png" alt="Snapchat icon"/></li>
         </ul>
     </div>
-        </div>
-   
-        <section class="contactForm">  
+   </div>
+        <div class="contactForm">  
     <a
       href="javascript:void(
         window.open(
@@ -541,78 +549,16 @@
     Any Question? Click Here!
     </a>
             
-        </section>
-            
         </div>
+            
+     </div>  
         
     </footer>
         
    <script src="js/lightbox-plus-jquery.js"></script>
-    <script>$("#stuckanchor li a").hover(function() {
-  // $('li').toggle('active');
-  clearTimeout(menuTimeout);
-  $(this).closest('li').addClass('active');
-});
 
-var pWidth = $(window).innerWidth(); //use .outerWidth() if you want borders
-var pOffset = $(window).offset();
-var menu = $('#anchormenu');
-var menuTimeout = null;
-
-menu.find( "li a" ).click(function(event){
-  $('html, body').animate({
-    scrollTop: $( $.attr(this, 'href') ).offset().top
-  }, 500);
-  event.preventDefault();
-});
-
-$( window ).scroll(function() {
-  showMenu()
-  clearTimeout( $.data( this, "scrollCheck" ) );
-  $.data( this, "scrollCheck", setTimeout(function() {
-    hideMenu()
-  }, 2000) );
-  console.log('scolling');
-});
-
-////////
-
-$(window).on('mousemove', mouseMoveHandler);
-
-function showMenu() {
-  menu.removeClass('hide');
-}
-
-function hideMenu() {
-  menu.addClass('hide');
-}
-
-
-function mouseMoveHandler(e) {  
-  wwidth = $(window).width();
-  woffset = wwidth - 100;
-  console.log(wwidth + '/' + woffset);
-  
-  if (menu.is(':hover')) {
-    // Show the menu if mouse is within 20 pixels 
-    // from the left or we are hovering over it.
-    clearTimeout(menuTimeout);
-    menuTimeout = null;
-    showMenu();
-  } else if (e.pageX > woffset) {
-    clearTimeout(menuTimeout);
-    menuTimeout = null;
-    showMenu();
-    menuTimeout = setTimeout(hideMenu, 2000);
-  } else if (menuTimeout === null) {
-    // Hide the menu if the mouse is further than 20 pixels 
-    // from the left and it is not hovering over the menu
-    // and we aren't already scheduled to hide it.
-    menuTimeout = setTimeout(hideMenu, 2000);
-  }
-};</script>
-   
-  <script>
+    
+    <script>
 function myMap() {
   var myCenter = new google.maps.LatLng(53.345341,-6.264249);
   var mapCanvas = document.getElementById("googleMap");
@@ -621,9 +567,10 @@ function myMap() {
   var marker = new google.maps.Marker({position:myCenter});
   marker.setMap(map);
 }
-</script>  
+</script>
   
-    
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaBEghP98rswrzDkmvq-fxxBswkoyDlQQ&callback=myMap"></script>
+   
+ <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaBEghP98rswrzDkmvq-fxxBswkoyDlQQ&callback=myMap"></script>
+    <script src="js/custom.js"></script>
     </body>
 </html>
