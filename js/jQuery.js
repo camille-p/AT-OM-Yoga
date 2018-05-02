@@ -1,4 +1,4 @@
-    <script>$("#stuckanchor li a").hover(function() {
+$("#stuckanchor li a").hover(function() {
   // $('li').toggle('active');
   clearTimeout(menuTimeout);
   $(this).closest('li').addClass('active');
@@ -60,6 +60,6 @@ function mouseMoveHandler(e) {
     // and we aren't already scheduled to hide it.
     menuTimeout = setTimeout(hideMenu, 2000);
   }
-};</script>
+};
     
     
