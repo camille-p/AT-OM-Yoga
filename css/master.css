@@ -85,7 +85,7 @@ nav li {
 nav li a {
     line-height: 120px;
     text-decoration: none;
-    color: #15435b;
+    color: #222;
     text-transform: uppercase;
     font-size: 22px;
 }
@@ -94,29 +94,30 @@ nav ul li a:before {
     content:"";
     display: block;
     height: 2px;
-    background-color: #24295f;
+    background-color: #e75367;
     position: absolute;
-    top: 0;
+    top: 75px;
     width: 0%;
     transition: all ease-in-out 300ms;
 }
 nav a:hover:before {
     width: 100%;
+   
 }
 
 
 
 nav ul li a:hover {
-  color: #1e6e38;
+  color: #e75367;
   }
 
 .menu-icon {
     width: 100%;
     background-color: #e8e9eb;
     text-align: right;
-    padding: 30px 15px;
+    padding: 35px 15px;
     cursor: pointer;
-    height: 80px;
+    height: 90px;
     display: none;
     border-bottom:#dddddd 1px solid;
 }
@@ -199,7 +200,7 @@ nav ul li a:hover {
 
 
 /* Header */
-.background {
+header {
     background-image: url(../images/Moutains-At-Om.jpg);
     background-size: cover;
 }
@@ -296,7 +297,7 @@ h1 {
 
 @media screen and (max-width: 480px) {
     .logo {
-        height: 80px;
+        height: 90px;
         position: absolute;
         top: 0;
         left: 0;
@@ -420,8 +421,8 @@ nav ul{
     padding-top:100px;
     width: 400px;
 }
-#About p {
-    color: #e8e9eb;
+#About p, #About h2 {
+    color: #222;
 }
 
 /* Tablet */  
@@ -489,11 +490,13 @@ nav ul{
 
 #Teachers h3 {
     margin: 10px;
+    color: #f9abb8
     
 }
 #Teachers h2 {
     padding: 50px 0 80px 0;
     margin-left: 5%;
+    color: #e75367
 }
 
 #Teachers {
@@ -523,7 +526,7 @@ margin-left: 5%;
 
 #Prices {
     height: 550px;
-    background-color: #fff; 
+    background-color: #f9abb8; 
 }
 
 #Prices h2 {
@@ -570,7 +573,7 @@ strong {
 
 /* Sign Up Button */
 .Sign {
-    background-color: #f9abb8;
+    background-color: #e75367;
     border-radius: 50px;
     color: black;
     padding: 15px 32px;
@@ -627,6 +630,8 @@ strong {
 }
 #Classes h2 {
     padding: 50px 0 50px 0;
+    color: #e75367;
+    margin-left: 5%;
 }
 tr, td, th {
     border: 1px solid #fff;
@@ -647,9 +652,6 @@ th {
     margin: auto;
 }
 
-#Classes h2  {
-margin-left: 5%;
-}
 
 
 
@@ -705,6 +707,9 @@ td, th {
 #Gallery .margin, #Gallery h2 {
     margin-left: 5%;
 }
+#Gallery h2 {
+    color: #222;
+}
 
 
 /* Tablet */ 
@@ -729,6 +734,10 @@ td, th {
 }
 #Contact h2 {
     margin-left: 5%;
+    color: #222;
+}
+#Contact h3 {
+    color: #e75367;
 }
 
 #Contact ul{
