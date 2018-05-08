@@ -16,7 +16,7 @@
     
 <body>
     
-  <h2>Sign Up</h2> 
+  <!--<h2>Sign Up</h2> 
     <p>Full Name</p>
     <input type="text" name="textfield" value="">
     <p>Email Address</p>
@@ -50,7 +50,32 @@
     </select>
     <p>CCV</p>
     <input type="text" name="textfield" value="CCV">
-    <input type="Submit" name="Submit" value="Submit">
+    <input type="Submit" name="Submit" value="Submit">-->
+    
+    <div class="container">
+      <form>
+    <div class="form-container">
+      <div class="personal-information">
+        <h4>Payment Information</h4>
+      </div> <!-- end of personal-information -->
+           
+          <input id="column-left" type="text" name="first-name" placeholder="First Name"/>
+          <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
+          <input id="input-field" type="text" name="number" placeholder="Card Number"/>
+          <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
+          <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+         
+          <div class="card-wrapper"></div>
+      
+
+          <input id="column-left" type="email" name="email" required="required" autocomplete="on" maxlength="20" placeholder="Email"/>
+          <input id="column-right" type="phone" name="phone" required="required" autocomplete="on" maxlength="5" placeholder="Phone number"/>
+         
+          <input id="input-button" type="submit" value="Submit"/>
+          </div>   
+    </form>
+ </div>
+
     
     </body>
 </html>

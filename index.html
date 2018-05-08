@@ -18,7 +18,7 @@
 <link type="text/css" rel="stylesheet" href="css/lightbox.css"/>
 </head>
     
-<body data-spy="scroll" data-target="#anchormenu" data-offset="200">
+<body data-spy="scroll" data-target="#mySidenav" data-offset="200">
     
     <header>
     <div class="wrapper">
@@ -42,22 +42,26 @@
         </div> 
         
          <div class="sidenav" id="mySidenav">
-            <a href="#myTopnav" id="home">&#9900</a>
-            <a href="#About" id="aboutus">&#9900</a>
-            <a href="#Teachers" id="teach">&#9900</a>
-            <a href="#Prices" id="cost">&#9900</a>
-            <a href="#Classes" id="times">&#9900</a>
-            <a href="#Gallery" id="photos">&#9900</a>
-            <a href="#Contact" id="contactus">&#9900</a>
+            <a href="#myTopnav" id="home">&#9900;<span class="tooltiptext">Home</span></a>
+            <a href="#About" id="aboutus">&#9900;<span class="tooltiptext">About Us</span></a>
+            <a href="#Teachers" id="teach">&#9900;<span class="tooltiptext">Teachers</span></a>
+            <a href="#Prices" id="cost">&#9900;<span class="tooltiptext">Prices</span></a>
+            <a href="#Classes" id="times">&#9900;<span class="tooltiptext">Classes</span></a>
+            <a href="#Gallery" id="photos">&#9900;<span class="tooltiptext">Gallery</span></a>
+            <a href="#Contact" id="contactus">&#9900;<span class="tooltiptext">Contact Us</span></a>
          </div>      
  
       
   <div id="main">
 
-        <img class="computer" src="images/Main.png" alt="woman doing yoga"/>  
+        
+       
     <div class="flex">  
         <h1>Feel right at home, learning<br/> yoga in your mother tongue.</h1> 
-   <img class="mobile" src="images/Main2.png" alt="woman doing yoga"/>
+         <div>
+            <a href="#signUp" class="Sign">Sign Up</a>
+            </div>
+        
     <div class="social">
     <ul>
         <li><img src="images/Facebook.png" alt="Facebook icon"/></li>
@@ -69,18 +73,17 @@
         </div>
        </div>
         
-    </header>
+    </header> 
     
-    <div class="skew">
+    <div>
     <section id="About">
-        <img src="images/About.jpg" alt="couple doing yoga"/>
+        <img src="images/About-At-Om.jpg" alt="couple doing yoga"/>
     <div class="aboutUs">
         <h2>About Us</h2>
     <p>In our studio, classes take place in different languages. Newcomers to Ireland who don’t feel comfortable with English yet, or homesick expatriates missing their native language, you are all welcome to our practice. <br>The languages we offer at the moment are French, Brazilian Portuguese, German, Spanish, and Irish and English as we are in Ireland after all!
 <br>We also know what it feels like being a student and trying to decide between yoga classes or groceries, which is why we offer you guys discounts!</p>
        
         </div>
-         
     </section>
     </div>
     <div class="wrapper">
@@ -91,37 +94,37 @@
         <div class="teachers">
         <div>
             <h3>Martine Dupont</h3>
-       <img src="images/French.jpg" alt="Martine, French Teacher"/>
+       <img src="images/French-At-Om.jpg" alt="Martine, French Teacher at At Om Yoga"/>
         <p>Bonjour! My name is Martine, I've been teaching yoga for 10 years in France and decided to move to Dublin 2 years ago!</p>
         </div>
         
        <div> 
      <h3>Enja Senkpiel</h3>
-        <img src="images/German.jpg" alt="Enja, German Teacher"/>
+        <img src="images/German-At-Om.jpg" alt="Enja, German Teacher at At Om Yoga"/>
        <p>Hallo! I'm Enja, a German loving yoga and Ireland! Come join my class, we'll have lots of fun!</p>
         </div>
         
         <div>
         <h3>Alfonso Flores</h3>
-        <img src="images/Spanish.jpg" alt="Alfonso, Spanish Teacher"/>
+        <img src="images/Spanish-At-Om.jpg" alt="Alfonso, Spanish Teacher at At Om Yoga"/>
         <p>¡Hola! I'm Alfonso. I've been travelling the world, teaching yoga, and ended up moving to Dublin a year ago, loving it so far!</p>
         </div>
         
         <div>
                <h3>Paula Oliveira</h3>
-        <img src="images/Brazilian.jpg" alt="Paula, Brazilian Teacher"/>
+        <img src="images/Brazilian-At-Om.jpg" alt="Paula, Brazilian Teacher at At Om Yoga"/>
         <p>Olá! My name is Paula, a Brazilian lucky enough to have her dream job for the past 3 years!</p>
         </div>
         
         <div>
             <h3>Emily Rogers</h3>
-        <img src="images/English.jpg" alt="Emily, English Teacher"/>
+        <img src="images/English-At-Om.jpg" alt="Emily, English Teacher at At Om Yoga"/>
         <p>Hello! I'm Emily and I'm passionate about yoga and meditation and love meeting new students!</p>
         </div>
         
         <div>
             <h3>Aoife O'Connor</h3>
-        <img src="images/Irish.jpg" alt="Aoife, Irish Teacher"/>
+        <img src="images/Irish-At-Om.jpg" alt="Aoife, Irish Teacher at At Om Yoga"/>
         <p>Dia dhuit! My name is Aoife, I've been a yoga teacher for 5 years, can't wait to start working with you!</p>
         </div>
              </div>
@@ -136,21 +139,21 @@
         <h2>Our Prices</h2>
         <div class="price">
             
-    <div id="DropIn">
+        <div class="leaves">
         <p><strong>Drop In</strong></p>
         <p>1 hour</p>
         <p>€15</p>
         <p>€10 Students</p>
         </div>
         
-        <div id="Monthly">
+        <div class="buddha">
         <p><strong>Monthly</strong></p>
         <p>Unlimited</p>
         <p>€100</p>
         <p>€80 Students</p>
         </div>
         
-        <div id="Yearly">
+        <div class="stones">
         <p><strong>Yearly</strong></p>
         <p>Unlimited</p>
         <p>€800</p>
@@ -164,7 +167,7 @@
     </div>
         
     
-    <section id="Classes">
+    <section id="Classes" class="skew">
         <div class="wrapper">
         <h2>Classes</h2>
       <div class="computertimetable">  <table>
@@ -236,7 +239,7 @@
         <div class="mobiletimetable">
           
                <h3>Monday - Beginners</h3>
-             <div class="weekday">
+             <div>
             <table>
                 <tr>
                     <th>9am-10am</th>
@@ -277,7 +280,7 @@
             
            
             <h3>Tuesday - Sun Salutation</h3>
-             <div class="weekday">
+             <div>
             <table>
                 <tr>
                     <th>9am-10am</th>
@@ -318,7 +321,7 @@
             
             
             <h3>Wednesday - Advanced</h3>
-            <div class="weekday">
+            <div>
             <table>
                 <tr>
                     <th>9am-10am</th>
@@ -359,7 +362,7 @@
             
             
             <h3>Thursday - Vinyasa</h3>
-            <div class="weekday">
+            <div>
             <table>
                 <tr>
                     <th>9am-10am</th>
@@ -400,7 +403,7 @@
             
             
             <h3>Friday - Ashtanga</h3>
-            <div class="weekday">
+            <div>
             <table>
                 <tr>
                     <th>9am-10am</th>
@@ -441,7 +444,7 @@
             
             
             <h3>Saturday - Flow</h3>
-            <div class="weekday">
+            <div>
             <table>
                 <tr>
                     <th>9am-10am</th>
@@ -482,30 +485,31 @@
         </div>
             <a href="#signUp" class="Sign">Sign Up</a>
         </div>
+
     </section>
     
     <section id="Gallery">
         <div class="wrapper">
         <h2>Gallery</h2>
-        <a href="images/DownwardDog.jpg" data-lightbox="yoga"><img src="images/DownwardDog.jpg" alt="Downward Facing Dog Pose"/></a>
-        <a href="images/UpwardDog.jpg" data-lightbox="yoga"><img src="images/UpwardDog.jpg" alt="Upward Facing Dog Pose"/></a>
-        <a href="images/AdvancedPose.jpg" data-lightbox="yoga"><img src="images/AdvancedPose.jpg" alt="Advanced Pose"/></a>
-        <a href="images/YogaPose.jpg" data-lightbox="yoga"><img src="images/YogaPose.jpg" alt="Yoga Pose"/></a>
-        <a href="images/YogaStretch.jpg" data-lightbox="yoga"><img src="images/YogaStretch.jpg" alt="Time To Stretch"/></a>
-        <a href="images/PlankPose.jpg" data-lightbox="yoga"><img src="images/PlankPose.jpg" alt="Plank Pose"/></a>
-        <a href="images/ChildPose.jpg" data-lightbox="yoga"><img src="images/ChildPose.jpg" alt="Child Pose"/></a>
-        <a href="images/YogaBack.jpg" data-lightbox="yoga"><img src="images/YogaBack.jpg" alt="Back Release"/></a>
-        <a href="images/Meditation.jpg" data-lightbox="yoga"><img src="images/Meditation.jpg" alt="Meditation"/></a>
+        <a href="images/Downward%20Dog%20At%20Om.jpg" data-lightbox="yoga" class="margin"><img src="images/Downward%20Dog%20At%20Om.jpg" alt="Downward Facing Dog Pose At Om"/></a>
+        <a href="images/Upward%20Dog%20At%20Om.jpg" data-lightbox="yoga"><img src="images/Upward%20Dog%20At%20Om.jpg" alt="Upward Facing Dog Pose At Om"/></a>
+        <a href="images/Advanced%20Pose%20At%20Om.jpg" data-lightbox="yoga"><img src="images/Advanced%20Pose%20At%20Om.jpg" alt="Advanced Pose At Om"/></a>
+        <a href="images/Yoga%20Pose%20At%20Om.jpg" data-lightbox="yoga" class="margin"><img src="images/Yoga%20Pose%20At%20Om.jpg" alt="Yoga Pose At Om"/></a>
+        <a href="images/Yoga%20Stretch%20At%20Om.jpg" data-lightbox="yoga"><img src="images/Yoga%20Stretch%20At%20Om.jpg" alt="Time To Stretch At Om"/></a>
+        <a href="images/Plank%20Pose%20At%20Om.jpg" data-lightbox="yoga"><img src="images/Plank%20Pose%20At%20Om.jpg" alt="Plank Pose At Om"/></a>
+        <a href="images/Child%20Pose%20At%20Om.jpg" data-lightbox="yoga" class="margin"><img src="images/Child%20Pose%20At%20Om.jpg" alt="Child Pose At Om"/></a>
+        <a href="images/Yoga%20Back%20At%20Om.jpg" data-lightbox="yoga"><img src="images/Yoga%20Back%20At%20Om.jpg" alt="Back Release At Om"/></a>
+        <a href="images/Meditation%20At%20Om.jpg" data-lightbox="yoga"><img src="images/Meditation%20At%20Om.jpg" alt="Meditation At Om"/></a>
        </div>
     </section>
      
     <footer id="Contact">
         <div class="wrapper">
-            
+          <h2>Get In Touch</h2>    
             <div class="flex-footer">
-                
+              
             <div class="address">
-        <h3>Contact Us</h3>
+        <h3>Contact Details</h3>
             <p>18 Temple Ln S, Temple Bar, Dublin 2</p>
             <p>+353 (01) 461 2811</p>
             <p>@ AtOmYoga@gmail.com</p>

@@ -12,20 +12,16 @@ html {
 }
 
 body {
-    background-color: #e8e9eb;
+    background-color: #222;
     font-family: Raleway;
 }
 .wrapper {
     width: 80%;
     margin:0 auto;
 }
-h1 {
-    font-size: 40px;
-padding-bottom: 250px;
-}
+
 h2, h3 {
-    color: #128944;
-    padding: 15px;
+    padding: 15px 15px 15px 0;
 }
 h2 {
     font-size: 30px;
@@ -37,12 +33,13 @@ h3 {
 h1, h2, h3, nav a {
     font-family: Yummo;
 }
-h1, body, p {
-    color: #24295f;
+h1, h2, h3, p {
+    color: #fff;
 }
 p {
     font-size: 18px;
     line-height: 22px;
+    
 }
 
 /* Skewed Backgrounds */
@@ -51,7 +48,7 @@ p {
     -webkit-transform: skewY(5deg); /* Safari */
     transform: skewY(5deg); /* Standard syntax */
 }
-#About img, .aboutUs, #Teachers h2, #Teachers h3,  #Teachers p, #Prices h2, #Prices p, #Prices .Sign {
+ #Teachers h2, #Teachers h3,  #Teachers p, #Prices h2, #Prices p, #Prices .Sign, #Classes h2, #Classes .Sign,.computertimetable, .mobiletimetable {
    -ms-transform: skewY(-5deg); /* IE 9 */
     -webkit-transform: skewY(-5deg); /* Safari */
     transform: skewY(-5deg); /* Standard syntax */
@@ -127,10 +124,10 @@ nav ul li a:hover {
 #mySidenav {
     position: fixed;
     z-index: 5;
+    right: 50px;
 }
 #mySidenav a {
     position: absolute;
-    right: -130px;
     padding: 15px;
     width: 100px;
     text-decoration: none;
@@ -138,63 +135,104 @@ nav ul li a:hover {
     color: black;
 }
 
+
 #home {
-    top: 40px;
+    top: 60px;
 }
 #aboutus {
-    top: 100px;
+    top: 120px;
     
 }
 #teach {
-    top: 160px;
+    top: 180px;
     
 }
 #cost {
-    top: 220px;
+    top: 240px;
     
 }
 #times {
-    top: 280px;
+    top: 300px;
     
 }
 #photos {
-    top: 340px;
+    top: 360px;
     
 }
 #contactus {
-    top: 400px;
+    top: 420px;
 }
 
+#mySidenav * {
+    position: relative;
+    display: inline-block;
+}
+
+#mySidenav * .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #e8e9eb;
+    opacity: 0.97;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 10000000;
+    top: -5px;
+    right: 105%;
+}
+
+#mySidenav *:hover .tooltiptext {
+    visibility: visible;
+}
+
+.active {
+  color: white; 
+}
+
+
+
 /* Header */
+header {
+    background-image: url(../images/Moutains-At-Om.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
+h1 {
+    font-size: 40px;
+padding-bottom: 100px;
+}
+
  #main {
      display: flex;
-     height: 680px;
      align-items: flex-end;
+     height: 650px;
      width: 90%;
      margin: auto;
-}
-.computer {
-    height: 650px;
-    margin-bottom: 20px;
+     
 }
 
 #main ul{
     display: flex;
-    margin: 0 0 40px 80px;
+    margin-bottom:40px;
 }   
 
-
+#main .Sign {
+    margin: 50px 10px;
+}
 #main .social img {
     height: 60px;
     padding: 5px;
     margin: 10px;
     
 }
-.mobile {
-    display: none;
-}
+
 .flex {
     flex-direction:column;
+    width: 100%;
+    align-items: center;
     display: flex;
 }
 
@@ -220,43 +258,33 @@ nav li {
     display: none;
     }
 
-      .flex-nav {
+.flex-nav {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 5;
+    z-index: 10000000;
     background-color: #e8e9eb;
-          
-       
+    opacity: 0.9;   
     }
-#main {
-    height: 400px;
-    width: 100%;
-    margin-top: 150px;
-    }
- #main .computer {
-     height: 400px;
-     margin: 0 0 20px 20px;
-     
-} 
-  #main .mobile {
-    display: none; 
-    } 
+
     
 h1 {
     font-size: 22px;
-    padding:0 30px 150px 0;
+    padding:0 30px 50px 0;
       
 } 
+    #main .Sign {
+    margin-bottom:40px;
+}
     #main .social img {
     height: 40px;
-        margin: 2px;
+    margin: 2px;
     
 }
     #main ul{
     display: flex;
-    margin: 0 0 20px 30px;
+    margin-bottom: 5px;
 }   
 }
 
@@ -317,7 +345,7 @@ nav ul{
      
     }
 
-    .wrapper {
+.wrapper {
     width: 100%;
 }
 
@@ -332,20 +360,10 @@ nav ul{
         display: flex;
     }
     
- #main .computer {
-    display:none;
-} 
-
-#main .mobile {
-    display: inline;
-      height: 300px;
-      margin: 20px;
-    }
-
 
 #main {
      display: flex;
-     min-height: 550px;
+     min-height: 630px;
      flex-direction: column;
     margin-top: 0px;
     
@@ -357,15 +375,18 @@ nav ul{
 }
  #main ul{
     display: flex;
-    margin: 20px 0 20px 40px;
+    margin: 20px;
 } 
     h1 {
-    margin-top: 120px;
+    margin-top: 170px;
     font-size: 22px;
     padding: 15px;
     text-align: center; 
         
 } 
+#main .Sign {
+    margin:40px;
+}
 
 .showing {
         max-height: 27em;
@@ -378,19 +399,19 @@ nav ul{
 
 /* About Us Page */
 #About {
-    min-height: 700px;
-    background-color: #24295f; 
+    min-height: 650px;
+    background-color: #f9abb8; 
     display: flex;
-    margin: 100px 0 ;
 }
 #About img {
-    height: 600px;
+    height:500px;
     border-radius: 50%;
-    margin: 50px;
+    margin: 70px;
+    margin-left: 10%;
 }
 .aboutUs {
-    padding-top:200px;
-    width: 500px;
+    padding-top:100px;
+    width: 400px;
 }
 #About p {
     color: #e8e9eb;
@@ -407,8 +428,8 @@ nav ul{
     margin: 60px 20px 20px 10px;
 } 
     .aboutUs {
-    padding-top: 40px;
-    width: 400px;
+    padding-top: 20px;
+    width: 300px;
 }
     
 }
@@ -453,18 +474,25 @@ nav ul{
 #Teachers img, #Teachers p {
     width: 300px;   
 }
+#Teachers img {
+    border-radius: 4px;
+}
 #Teachers p {
     padding: 20px;
 }
 
 #Teachers h3 {
     margin: 10px;
+    
 }
 #Teachers h2 {
-    padding-bottom: 80px;
+    padding: 50px 0 80px 0;
+    margin-left: 5%;
 }
 
-
+#Teachers {
+    padding-bottom: 50px;
+}
 
 /* Tablet */  
 @media screen and (max-width: 768px) {
@@ -483,9 +511,14 @@ nav ul{
 
 
 /* Prices Page */
+#Prices h2{
+margin-left: 5%;
+}
+
 #Prices {
     height: 550px;
-    background-color: #ece036
+    background-color: #f9abb8;
+  
 }
 #Prices h2 {
     margin-bottom: 90px;
@@ -494,7 +527,7 @@ nav ul{
    display: flex;
    
 }
-#DropIn, #Monthly, #Yearly {
+.price > div {
   
     margin: 0 auto;
     padding: 40px;
@@ -503,7 +536,7 @@ nav ul{
     width: 200px;
     
 }
-#DropIn:hover, #Monthly:hover, #Yearly:hover {  
+.price > div:hover {  
      -webkit-transform: scale(1.3);
         -ms-transform: scale(1.3);
         transform: scale(1.3);
@@ -512,13 +545,24 @@ nav ul{
 strong {
     font-weight: bold;
 }
-
+.leaves {
+    background-image: url(../images/Lotus-At-Om.jpg);
+    background-size: cover;
+}
+.buddha {
+    background-image: url(../images/Buddha-At-Om.jpg);
+    background-size: cover;
+}
+.stones {
+    background-image: url(../images/Stones-At-Om.jpg);
+    background-size: cover;
+}
 
 /* Sign Up Button */
 .Sign {
     background-color: #128944;
-    border: none;
-    color: white;
+    border-radius: 5%;
+    color: #e8e9eb;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -526,18 +570,18 @@ strong {
     font-size: 16px;
     margin: 15px;
     cursor: pointer;
+    
+     margin: 80px 0 50px 40%;
 }
 .Sign:hover {
     opacity: 0.7;
 }
-#Prices .Sign {
-    margin-top: 100px;
-}
+
 
 /* Tablet */  
 @media screen and (max-width: 768px) {
     
- #DropIn, #Monthly, #Yearly {
+ .price > div {
      margin: 20px;
      padding: 30px;
     }
@@ -569,12 +613,11 @@ strong {
 
 
 /* Classes Page */
-#Classes {
-    
+#Classes { 
     min-height: 500px;
 }
 #Classes h2 {
-    padding-top: 50px;
+    padding: 50px 0 50px 0;
 }
 tr, td, th {
     border: 1px solid #24295f;
@@ -589,6 +632,17 @@ th {
     display: none;
 }
 
+.computertimetable {
+    width: 90%;
+    margin: auto;
+}
+
+#Classes h2  {
+margin-left: 5%;
+}
+
+
+
 /* Tablet */ 
 @media screen and (max-width: 768px) {
     #Classes {
@@ -599,9 +653,11 @@ th {
     }
   
     .mobiletimetable {
-    display: inline;
+    display: block;
+        margin: auto;
+        width: 80%;
     }
-    .weekday {
+.mobiletimetable h3 ~ div {
         display: flex;
         flex-wrap: wrap;   
     }
@@ -626,39 +682,42 @@ td, th {
 
 /* Gallery Page */
 #Gallery {
-    background-color: #eadada;
+    background-color: #f9abb8;
     padding: 50px 0;
 }
 #Gallery img {
-    height: 250px;
+    height: 220px;
+    border-radius: 4px;
+    margin: 10px 10px 10px 0;
 }
+#Gallery .margin, #Gallery h2 {
+    margin-left: 5%;
+}
+
 
 /* Tablet */ 
 @media screen and (max-width: 768px) {
 #Gallery img {
-    height: 220px;
-}    
+    height: 200px;
+}  
+    #Gallery .margin {
+    margin-left: 0;
+}
 }
 
-/* Mobile */
-
-@media screen and (max-width: 480px) {
-    #Gallery img {
-    height: 200px; 
-}
-}
 
 
 
 /* Contact Page */
 #Contact {
-    background-color: #24295f;
+    background-image: url(../images/Contact-At-Om.jpg);
+  background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    z-index:-1;  
 }
-#Contact h3, #Contact p{
-    text-align: center;
-}
-#Contact p {
-    color: #e8e9eb
+#Contact h2 {
+    margin-left: 5%;
 }
 
 #Contact ul{
@@ -673,16 +732,17 @@ td, th {
 .flex-footer {
     display: flex;
     padding: 20px 0;
+    margin-left: 5%;
 }
 .address, .open, .media {
-    padding: 15px;
+    padding: 15px 15px 15px 0;
     flex: 1;
 }
 
 #googleMap {
     width: 300px;
     height: 300px;
-    margin: 10px;
+    margin: 10px 10px 10px 0;
 }
 .contactForm a {
     text-decoration: none;
@@ -724,63 +784,121 @@ td, th {
 
     }
 }
-/*
 
-#anchormenu {
-  position: fixed;
-  top: 160px;
-  right: 50px;
-  z-index: 999;
-  transition: all ease .3s;
-  width: 200px;
-  overflow: visible;
-}
-  
- #anchormenu li {
-    transition: all ease 0.3s;
-    margin-bottom: 10px;
-    overflow: hidden;
-    width: 200px;
-    float: right;
-    clear: both;
-}
-   #anchormenu li .active 
-      .btn {
-        color: blue;
-        background-color: black;
-        box-shadow: none;
-      }
-   
- #anchormenu li  .active:hover {
-      width: 200px;
-}
-  #anchormenu li .btn {
-        color: blue;
-        background-color: black;
-        box-shadow: none;
-      }
-  
-  #anchormenu .btn {
-    border: 0 solid blue;
-    border-radius: 50%;
-    color: blue;
-    background: #c4c4c4;
-    overflow: hidden;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    position: relative;
-    z-index: 1;
-    font-size: 14px;
-    padding: 15px 35px;
-    transition: all ease 0.3s;
-    &:hover {
-      color: blue;
-      background-color: black;
-    }
-}
 
-#anchormenu.hide {
-  overflow: hidden;
-  width: 4px;
+
+
+
+/*Credit Card*/
+#signUp {
+    display: none;
+}
+.container {
+  padding: 60px 0;
+  background-color: rgba(178,209,229,0.7);
+  margin: 0 auto;
+  width: 600px;
+}
+.form-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.card-wrapper {
+  background-color: #6FB7E9;
+  width: 100%;
+  display: flex;
+
+}
+.personal-information {
+  background-color: #3C8DC5;
+  color: #fff;
+  padding: 1px 0;
+  text-align: center;
+}
+h4 {
+  font-size: 1.3em;
+  font-family: "Roboto"
+}
+input {
+  margin: 1px 0;
+  padding-left: 3%;
+  font-size: 14px;
+}
+input[type="text"]{
   display: block;
-}*/
+  height: 50px;
+  width: 97%;
+  border: none;
+}
+input[type="email"]{
+  display: block;
+  height: 50px;
+  width: 97%;
+  border: none;
+}
+input[type="submit"]{
+  display: block;
+  height: 60px;
+  width: 100%;
+  border: none;
+  background-color: #3C8DC5;
+  color: #fff;
+  margin-top: 2px;
+  cursor: pointer;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+input[type="submit"]:hover{
+  background-color: #6FB7E9;
+  transition: 0.3s ease;
+}
+#column-left {
+  width: 46.8%;
+  float: left;
+  margin-bottom: 2px;
+}
+#column-right {
+  width: 46.8%;
+  float: right;
+}
+
+@media only screen and (max-width: 480px){
+  body {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form-container {
+    margin: 0 2%;
+  }
+  input {
+    font-size: 1em;
+  }
+  #input-button {
+    width: 100%;
+  }
+  #input-field {
+    width: 96.5%;
+  }
+  h4 {
+    font-size: 1.2em;
+  }
+  input {
+    margin: 2px 0;
+  }
+  input[type="submit"]{
+    height: 50px;
+  }
+  #column-left {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+  #column-right {
+    width: 96.5%;
+    display: block;
+    float: none;
+  }
+}
