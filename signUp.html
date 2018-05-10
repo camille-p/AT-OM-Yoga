@@ -52,28 +52,46 @@
     <input type="text" name="textfield" value="CCV">
     <input type="Submit" name="Submit" value="Submit">-->
     
-    <div class="container">
+    <div id="signUp" class="modal">
+        
+        <div class="modal-box">
       <form>
+          <h2>Sign Up</h2>
+          <div class="close-modal">&times;</div>
     <div class="form-container">
+        <div class="personal-information">
+        <h4>Subscription Chosen:</h4>
+      </div>
+        <select name="select">
+        <option value="Drop In">Drop In</option>
+        <option value="Monthly">Monthly</option>
+        <option value="Yearly">Yearly</option>  
+    </select><br/>
+<input type="radio" name="radiobutton" value="Student"><span class="radiobutton">Yes I'm a Student, I won't Forget to Bring my ID</span><br>
+<input type="radio" name="radiobutton" value="Full Price"><span class="radiobutton">No I'm not a Student </span>  
+    <input type="text" name="total" placeholder="Total" class="card-details">
+          
       <div class="personal-information">
         <h4>Payment Information</h4>
-      </div> <!-- end of personal-information -->
-           
-          <input id="column-left" type="text" name="first-name" placeholder="First Name"/>
-          <input id="column-right" type="text" name="last-name" placeholder="Surname"/>
-          <input id="input-field" type="text" name="number" placeholder="Card Number"/>
-          <input id="column-left" type="text" name="expiry" placeholder="MM / YY"/>
-          <input id="column-right" type="text" name="cvc" placeholder="CCV"/>
+      </div>
+          <div class="card-wrapper">
+          <input class="card-details" type="text" name="first-name" placeholder="First Name"/>
+          <input class="card-details" type="text" name="last-name" placeholder="Surname"/>
+          <input class="card-details" type="text" name="number" placeholder="Card Number"/>
+          <input class="card-details" type="text" name="expiry" placeholder="MM / YY"/>
+          <input class="card-details" type="text" name="cvc" placeholder="CCV"/>
          
-          <div class="card-wrapper"></div>
+          
       
-
-          <input id="column-left" type="email" name="email" required="required" autocomplete="on" maxlength="20" placeholder="Email"/>
-          <input id="column-right" type="phone" name="phone" required="required" autocomplete="on" maxlength="5" placeholder="Phone number"/>
-         
-          <input id="input-button" type="submit" value="Submit"/>
-          </div>   
+          <input class="card-details" type="text" name="streetaddress" required="required" autocomplete="on" maxlength="45" placeholder="Street Address"/>
+          <input class="card-details" type="text" name="city" required="required" autocomplete="on" maxlength="20" placeholder="City"/>
+          <input class="card-details" type="text" name="postcode" required="required" autocomplete="on" pattern="[0-9]*" maxlength="5" placeholder="Post code"/>
+          <input class="card-details" type="email" name="email" required="required" autocomplete="on" maxlength="40" placeholder="Email"/>
+          <input class="input-button" type="submit" value="Submit"/>
+          </div> 
+        </div>
     </form>
+            </div>
  </div>
 
     

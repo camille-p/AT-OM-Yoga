@@ -5,14 +5,3 @@ $(document).ready(function(){
 });
 
 
-
-
-
-
-
-
-
-$(".Sign").on("click", function(event){
-    $("#signUp").slideToggle();
-    event.preventDefault();
-});

@@ -22,6 +22,7 @@ body {
 
 h2, h3 {
     padding: 15px 15px 15px 0;
+    color: #1381a2;
 }
 h2 {
     font-size: 30px;
@@ -33,7 +34,7 @@ h3 {
 h1, h2, h3, nav a {
     font-family: Yummo;
 }
-h1, h2, h3, p {
+h1, p {
     color: #fff;
 }
 p {
@@ -101,11 +102,8 @@ nav ul li a:before {
     transition: all ease-in-out 300ms;
 }
 nav a:hover:before {
-    width: 100%;
-   
+    width: 100%;  
 }
-
-
 
 nav ul li a:hover {
   color: #e75367;
@@ -203,11 +201,14 @@ nav ul li a:hover {
 header {
     background-image: url(../images/Moutains-At-Om.jpg);
     background-size: cover;
+    
 }
 
 h1 {
     font-size: 40px;
-padding-bottom: 170px;
+margin-bottom: 140px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
  #main {
@@ -221,17 +222,17 @@ padding-bottom: 170px;
 
 #main ul{
     display: flex;
-    margin-bottom:40px;
+    margin-bottom: 40px;
 }   
 
 #main .Sign {
     margin: 10px 10px 50px 10px;
 }
+
 #main .social img {
     height: 60px;
     padding: 5px;
     margin: 10px 10px 60px 10px;
-    
 }
 
 .flex {
@@ -276,7 +277,8 @@ nav li {
     
 h1 {
     font-size: 26px;
-    padding:0 30px 60px 0;
+    padding:30px;
+    margin-bottom: 10px;
       
 } 
     #main .Sign {
@@ -308,16 +310,16 @@ h1 {
     width:100%; 
     background:#f1f1f1;  
     position:absolute; 
-        right: 0;
+    right: 0;
     text-align:center; 
     font-size:12px;
     }
 
 
 nav li:hover {   
-    background:#ffffff; 
+    background:#fff; 
     padding:15px 0 15px 0; 
-    border-bottom:#dddddd 1px solid;
+    border-bottom:#ddd 1px solid;
     }
 
 nav li a {
@@ -326,7 +328,7 @@ nav li a {
 }
 nav li {  
         padding:15px 0 15px 0; 
-        border-bottom:#dddddd 1px solid;
+        border-bottom:#ddd 1px solid;
         }
 nav li:last-child {
     border-bottom: none;
@@ -366,13 +368,12 @@ nav ul{
 #main ul {
         display: flex;
     }
-    
 
 #main {
      display: flex;
      min-height: 630px;
      flex-direction: column;
-    margin-top: 0px;
+    margin-top: 0;
     
 } 
  #main .social img {
@@ -407,18 +408,18 @@ nav ul{
 /* About Us Page */
 #About {
     min-height: 650px;
-    background-color: #f9abb8; 
-    display: flex;
+    background-color: #ff6e83;
     margin-top: -50px;
+    display: flex;
+    justify-content: center;
 }
 #About img {
     height:500px;
     border-radius: 50%;
-    margin: 70px;
-    margin-left: 10%;
+    margin: 70px 100px 70px 0;
 }
 .aboutUs {
-    padding-top:100px;
+    padding:100px 0;
     width: 400px;
 }
 #About p, #About h2 {
@@ -446,9 +447,7 @@ nav ul{
 @media screen and (max-width: 480px) {
     #About {
     min-height: 850px;
-    flex-direction: column;
-       
-       
+    flex-direction: column;      
 }
   
  #About img {
@@ -457,12 +456,11 @@ nav ul{
      padding: 20px;
       margin: 0 auto;
      margin-top: 10px;
-
     }
     .aboutUs {
     padding:20px;
     width: 300px;
-        margin: 0 auto;
+    margin: 0 auto;
     }
 }
 
@@ -490,13 +488,13 @@ nav ul{
 
 #Teachers h3 {
     margin: 10px;
-    color: #f9abb8
+    color: #f9abb8;
     
 }
 #Teachers h2 {
     padding: 50px 0 80px 0;
     margin-left: 5%;
-    color: #e75367
+    color: #1381a2;
 }
 
 #Teachers {
@@ -522,17 +520,17 @@ nav ul{
 /* Prices Page */
 #Prices h2{
 margin-left: 5%;
+    color: #1381a2;
+    margin-bottom: 90px;
 }
 
 #Prices {
     height: 550px;
-    background-color: #f9abb8; 
+    background-color: #ff9b99; 
 }
 
-#Prices h2 {
-    margin-bottom: 90px;
-}
-#Prices h2, #Prices p {
+
+#Prices p {
     color: #222;
 }
 .price {
@@ -559,23 +557,23 @@ strong {
     font-weight: bold;
 }
 .leaves {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../images/Lotus-At-Om.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../images/Lotus-At-Om.jpg);
     background-size: cover;
 }
 .buddha {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../images/Buddha-At-Om.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../images/Buddha-At-Om.jpg);
     background-size: cover;
 }
 .stones {
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(../images/Stones-At-Om.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), url(../images/Stones-At-Om.jpg);
     background-size: cover;
 }
 
 /* Sign Up Button */
 .Sign {
-    background-color: #e75367;
+    background-color: #1381a2;
     border-radius: 50px;
-    color: black;
+    color: #fff;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
@@ -630,7 +628,7 @@ strong {
 }
 #Classes h2 {
     padding: 50px 0 50px 0;
-    color: #e75367;
+    color: #1381a2;
     margin-left: 5%;
 }
 tr, td, th {
@@ -647,12 +645,9 @@ th {
     display: none;
 }
 
-.computertimetable {
-    width: 90%;
-    margin: auto;
+table {
+    margin: 0 auto;
 }
-
-
 
 
 
@@ -668,8 +663,7 @@ th {
   
     .mobiletimetable {
     display: inline-block;
-        margin: auto;
-        width: 80%;
+        
     }
 .mobiletimetable h3 ~ div {
         display: flex;
@@ -696,19 +690,24 @@ td, th {
 
 /* Gallery Page */
 #Gallery {
-    background-color: #f9abb8;
-    padding: 50px 0;
+    background-color: #d7aeb2;
+    padding: 50px 0;    
+}
+#Gallery .gallery-flex {
+    display: flex;
+  justify-content: center; 
+    flex-wrap: wrap;
 }
 #Gallery img {
     height: 220px;
     border-radius: 4px;
-    margin: 10px 10px 10px 0;
+    margin: 10px;
 }
-#Gallery .margin, #Gallery h2 {
+#Gallery h2 {
     margin-left: 5%;
 }
 #Gallery h2 {
-    color: #222;
+    color: #1381a2;
 }
 
 
@@ -730,11 +729,12 @@ td, th {
     background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url(../images/Contact-At-Om.jpg);
   background-repeat: no-repeat;
     background-size: cover;
+    height: 600px;
       
 }
 #Contact h2 {
     margin-left: 5%;
-    color: #222;
+    color: #1381a2;
 }
 #Contact h3 {
     color: #e75367;
@@ -754,37 +754,42 @@ td, th {
     padding: 20px 0;
     margin-left: 5%;
 }
-.address, .open, .media {
-    padding: 15px 15px 15px 0;
-    flex: 1;
-}
 
 #googleMap {
-    width: 300px;
-    height: 300px;
-    margin: 10px 10px 10px 0;
+    width: 350px;
+    height: 400px;
+    margin: 20px;
     border-radius: 4px;
 }
 .contactForm a {
     text-decoration: none;
-    color: #128944;
+    color: #ff3b77;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
 }
 .contactForm {
     padding: 25px;
     text-align: center;
 }
+p.copyright{
+    text-align:center;
+}
+
+.contact-form input, .contact-form textarea {
+    margin: 10px 10px 10px 0;
+    padding: 10px;
+}
+
 
 /* Tablet */ 
 @media screen and (max-width: 768px) {
-    #Contact ul{
-        flex-direction: column;
-    }
+    
     #Contact ul li {
         align-self: center;
         margin-top: 10px;
     }
     .wrapper{
-        width: 90%;
+        width: 100%;
     }
 }
 
@@ -811,117 +816,52 @@ td, th {
 
 
 /*Credit Card*/
-/*
+
 #signUp {
-    display: none;
+    display:none;
+    z-index:9999;
+    width: 500px;
 }
-.container {
-  padding: 60px 0;
-  background-color: rgba(178,209,229,0.7);
-  margin: 0 auto;
-  width: 600px;
+#signUp h4 {
+    padding: 10px 10px 10px 0;
+    color: #ff3b77;
 }
-.form-container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+#signUp h2 {
+    color: #cdff00;
+    text-align: center;
 }
 .card-wrapper {
-  background-color: #6FB7E9;
-  width: 100%;
-  display: flex;
-
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-.personal-information {
-  background-color: #3C8DC5;
-  color: #fff;
-  padding: 1px 0;
-  text-align: center;
-}
-h4 {
-  font-size: 1.3em;
-  font-family: "Roboto"
-}
-input {
-  margin: 1px 0;
-  padding-left: 3%;
-  font-size: 14px;
-}
-input[type="text"]{
-  display: block;
-  height: 50px;
-  width: 97%;
-  border: none;
-}
-input[type="email"]{
-  display: block;
-  height: 50px;
-  width: 97%;
-  border: none;
-}
-input[type="submit"]{
-  display: block;
-  height: 60px;
-  width: 100%;
-  border: none;
-  background-color: #3C8DC5;
-  color: #fff;
-  margin-top: 2px;
-  cursor: pointer;
-  font-size: 0.9em;
-  text-transform: uppercase;
-  font-weight: bold;
-  cursor: pointer;
-}
-input[type="submit"]:hover{
-  background-color: #6FB7E9;
-  transition: 0.3s ease;
-}
-#column-left {
-  width: 46.8%;
-  float: left;
-  margin-bottom: 2px;
-}
-#column-right {
-  width: 46.8%;
-  float: right;
+.card-details, input[type="radio"] {
+   margin: 5px; 
 }
 
-@media only screen and (max-width: 480px){
-  body {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .form-container {
-    margin: 0 2%;
-  }
-  input {
-    font-size: 1em;
-  }
-  #input-button {
-    width: 100%;
-  }
-  #input-field {
-    width: 96.5%;
-  }
-  h4 {
-    font-size: 1.2em;
-  }
-  input {
-    margin: 2px 0;
-  }
-  input[type="submit"]{
-    height: 50px;
-  }
-  #column-left {
-    width: 96.5%;
-    display: block;
-    float: none;
-  }
-  #column-right {
-    width: 96.5%;
-    display: block;
-    float: none;
-  }
+.input-button {
+    background-color: #ff3b77;
+    width: 100px;
+    margin: auto;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 50px;
+    cursor: pointer;
 }
-*/
+.form-container {
+    padding: 20px;
+}
+
+.radiobutton {
+     color: #fff;
+     padding: 10px;
+    
+}
+
+select {
+    margin: 10px;
+    margin-left: 0;
+}
+
+
+
