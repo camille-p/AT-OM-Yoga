@@ -5,3 +5,13 @@ $(document).ready(function(){
 });
 
 
+$(".Sign").on("click", function(){
+$("#signUp, .modal-box").addClass("active");
+});
+
+$(".close").on("click", function(){
+$("#signUp, .modal-box").removeClass("active");
+});
+
+
+    
