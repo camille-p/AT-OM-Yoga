@@ -484,11 +484,12 @@ nav ul{
 }
 #Teachers p {
     padding: 20px;
+    color: #d7aeb2;
 }
 
 #Teachers h3 {
     margin: 10px;
-    color: #f9abb8;
+    color: #ff6e83;
     
 }
 #Teachers h2 {
@@ -782,6 +783,9 @@ p.copyright{
     padding: 10px;
 }
 
+sign-newsletter {
+}
+
 
 /* Tablet */ 
 @media screen and (max-width: 768px) {
@@ -792,6 +796,9 @@ p.copyright{
     }
     .wrapper{
         width: 100%;
+    }
+    #Contact {
+        height: 650px;
     }
 }
 
@@ -809,7 +816,12 @@ p.copyright{
     }
     #googleMap {
         margin-top: 30px;
+        width: 300px;
+        height: 300px;
 
+    }
+    #Contact {
+        height: 1350px;
     }
 }
 
@@ -819,8 +831,7 @@ p.copyright{
 
 /*Credit Card*/
 
-#signUp {
-    visibility:hidden;
+#signUp, #signNewsletter {
     position: fixed;
     z-index: 10000; 
     padding-top: 100px; 
@@ -832,14 +843,16 @@ p.copyright{
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
 }
-.modal-box {
+.modal-box, .sign-newsletter {
     width: 30%;
     margin: auto;
-    visibility:hidden;
     background-color: #222;
     padding: 15px;
 }
-#signUp h4 {
+#signUp, .modal-box, #signNewsletter, .sign-newsletter {
+    visibility:hidden;
+}
+#signUp h4, .sign-newsletter h4 {
     padding: 10px 10px 10px 0;
     color: #ff3b77;
 }
@@ -880,7 +893,7 @@ select {
     margin: 10px;
     margin-left: 0;
 }
-.close {
+.close, .Newsletter {
     background-color: #1381a2;
     border-radius: 50px;
     color: #fff;
@@ -891,12 +904,32 @@ select {
     margin: 0 auto;
     cursor: pointer;
 }
+.address .Newsletter {
+    margin-left: 0;
+}
+.sign-newsletter {
+    width: 30%;
+}
 
-#signUp.active{
+#signUp.active, #signNewsletter.active{
 visibility:visible;
 }
 
-.modal-box.active {
+.modal-box.active, .sign-newsletter.active {
 visibility:visible;
 }
 
+/* Tablet */  
+@media screen and (max-width: 768px) {
+    .modal-box, .sign-newsletter {
+        width: 50%;
+    }
+}
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+    .modal-box, .sign-newsletter {
+        width: 80%;
+    }
+}
