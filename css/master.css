@@ -17,30 +17,39 @@ body {
 }
 .wrapper {
     width: 80%;
-    margin:0 auto;
-}
-
-h2, h3 {
-    padding: 15px 15px 15px 0;
-    color: #1381a2;
-}
-h2 {
-    font-size: 30px;
-}
-
-h3 {
-    font-size: 24px;
+    margin: auto;
 }
 h1, h2, h3, nav a {
     font-family: Yummo;
 }
+h2, h3 {
+    padding: 15px 15px 15px 0;
+}
+h2 {
+    font-size: 30px;
+    color: #1381a2;
+}
+
+h3 {
+    font-size: 24px;
+    color: #e75367
+}
+
 h1, p {
     color: #fff;
 }
 p {
     font-size: 18px;
     line-height: 22px;
-    
+}
+/* Images Border Radius */
+#Teachers img, .price > div, #Gallery img, #googleMap {
+    border-radius: 4px;
+    }
+
+/* Left Margins */
+#Teachers h2, #Prices h2, #Classes h2, #Gallery h2, #Contact h2  {
+    margin-left: 5%;
 }
 
 /* Skewed Backgrounds */
@@ -53,8 +62,8 @@ p {
 }
 #About img, .aboutUs, #Teachers h2, #Teachers h3,  #Teachers p, #Prices h2, #Prices p, #Prices .Sign {
    -ms-transform: skewY(-5deg); /* IE 9 */
-    -webkit-transform: skewY(-5deg); /* Safari */
-    transform: skewY(-5deg); /* Standard syntax */
+   -webkit-transform: skewY(-5deg); /* Safari */
+   transform: skewY(-5deg); /* Standard syntax */
 }
 
 
@@ -66,8 +75,7 @@ p {
 
 nav ul {
    display: flex;
-    transition: max-height 1s;
-    
+   transition: max-height 1s;
 }
 
 .logo {
@@ -137,30 +145,30 @@ nav ul li a:hover {
 }
 
 
-#home {
+#mySidenav a:nth-child(1) {
     top: 60px;
 }
-#aboutus {
+#mySidenav a:nth-child(2) {
     top: 120px;
     
 }
-#teach {
+#mySidenav a:nth-child(3){
     top: 180px;
     
 }
-#cost {
+#mySidenav a:nth-child(4) {
     top: 240px;
     
 }
-#times {
+#mySidenav a:nth-child(5) {
     top: 300px;
     
 }
-#photos {
+#mySidenav a:nth-child(6) {
     top: 360px;
     
 }
-#contactus {
+#mySidenav a:nth-child(7) {
     top: 420px;
 }
 
@@ -169,7 +177,7 @@ nav ul li a:hover {
     display: inline-block;
 }
 
-#mySidenav * .tooltiptext {
+#mySidenav * span {
     visibility: hidden;
     width: 100px;
     background-color: #8999A8;
@@ -184,7 +192,7 @@ nav ul li a:hover {
     right: 105%;
 }
 
-#mySidenav *:hover .tooltiptext {
+#mySidenav *:hover span {
     visibility: visible;
 }
 
@@ -197,12 +205,11 @@ nav ul li a:hover {
 header {
     background-image: url(../images/Moutains-At-Om.jpg);
     background-size: cover;
-    
 }
 
 h1 {
     font-size: 40px;
-margin-bottom: 140px;
+    margin-bottom: 140px;
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -213,7 +220,6 @@ margin-bottom: 140px;
      height: 700px;
      width: 90%;
      margin: auto;
-     
 }
 
 #main ul{
@@ -241,14 +247,11 @@ margin-bottom: 140px;
 /* Tablet */  
 @media screen and (max-width: 768px) {
 
- .logo {
-        height: 100px;
-        padding: 10px;
+.logo {
+     height: 100px;
+     padding: 10px;
     }
 
-nav ul {
-        display: flex;
-    }
 nav li a {
     line-height: 80px;
     font-size: 16px;
@@ -260,7 +263,7 @@ nav li {
     display: none;
     }
 
-.flex-nav {
+#myTopnav {
     position: fixed;
     top: 0;
     left: 0;
@@ -274,7 +277,7 @@ nav li {
 h1 {
     font-size: 26px;
     padding:30px;
-    margin-bottom: 10px;
+    margin-bottom: 60px;
       
 } 
     #main .Sign {
@@ -288,20 +291,23 @@ h1 {
     #main ul{
     display: flex;
     margin-bottom: 5px;
-}   
+}  
+    nav a:hover:before {
+        display: none;
+    } 
 }
 
 /* Mobile */
 
 @media screen and (max-width: 480px) {
-    .logo {
-        height: 90px;
-        position: absolute;
-        top: 0;
-        left: 0;
+.logo {
+    height: 90px;
+    position: absolute;
+    top: 0;
+    left: 0;
     }
     
-    nav {
+nav {
     z-index:2; 
     width:100%; 
     background:#e8e9eb;  
@@ -311,92 +317,73 @@ h1 {
     font-size:12px;
     }
 
-
-nav li:hover {   
-    background:#fff; 
-    padding:15px 0 15px 0; 
-    border-bottom:#ddd 1px solid;
+nav ul{
+    display: flex;
+    flex-direction: column;
+    max-height: 0px;
+    overflow: hidden;
     }
-
-nav li a {
-    line-height: 20px;
-    font-size: 18px;
-}
-nav li {  
-        padding:15px 0 15px 0; 
-        border-bottom:#ddd 1px solid;
-        }
-nav li:last-child {
-    border-bottom: none;
-}    
-  
 nav ul li a:hover {  
     color: #666; 
     text-decoration:none;
     }
 
-    
-nav a:hover:before {
-        display: none;
+nav li:hover {   
+    background:#fff; 
+    }
+
+nav li {
+     padding:15px 0 15px 0;
+     border-bottom:#ddd 1px solid;
+     }
+nav li:last-child {
+    border-bottom: none;
     } 
 
-nav ul{
-      display: flex;
-      flex-direction: column;
-     max-height: 0px;
-    overflow: hidden;
-     
+nav li a {
+    line-height: 20px;
+    font-size: 18px;
     }
 
 .wrapper {
     width: 100%;
-}
-
+    }
 
 .menu-icon {
     display: block;
     z-index: 100000;
     }
-    
-#mySidenav {
-    display: none;
-    }
+ 
 #main ul {
-        display: flex;
+    display: flex;
+    margin: 20px;
     }
 
 #main {
-     display: flex;
-     min-height: 630px;
-     flex-direction: column;
+    display: flex;
+    min-height: 630px;
+    flex-direction: column;
     margin-top: 0;
-    
-} 
- #main .social img {
+    } 
+#main .social img {
     height: 45px;
     margin: 50px 15px; 
-       
-}
- #main ul{
-    display: flex;
-    margin: 20px;
-} 
-    h1 {
+    }
+
+h1 {
     margin: 170px 0 50px 0;
     font-size: 24px;
     padding: 15px;
     text-align: center; 
-        
-} 
+    } 
 #main .Sign {
     margin:50px 0 20px 0;
-}
-
-.showing {
-        max-height: 27em;
-    }  
     }
 
+.showing {
+    max-height: 27em;
+    }  
+}
 
 
 
@@ -408,7 +395,7 @@ nav ul{
     margin-top: -50px;
     display: flex;
     justify-content: center;
-}
+    }
 #About img {
     height:500px;
     border-radius: 50%;
@@ -422,41 +409,41 @@ nav ul{
     color: #222;
 }
 
+
 /* Tablet */  
 @media screen and (max-width: 768px) {
-    #About {
+#About {
     min-height: 500px;
-}
+    }
 #About img {
     height: 320px;
     width: 320px;
     margin: 60px 20px 20px 10px;
-} 
-    .aboutUs {
+    } 
+.aboutUs {
     padding-top: 20px;
     width: 300px;
+    }
 }
-}
+
 
 /* Mobile */
 
 @media screen and (max-width: 480px) {
-    #About {
+#About {
     min-height: 850px;
     flex-direction: column;      
-}
-  
- #About img {
-     height: 300px;
-     width: 300px;
-     padding: 20px;
-      margin: 0 auto;
-     margin-top: 10px;
     }
-    .aboutUs {
-    padding:20px;
+  
+#About img {
+    height: 300px; 
+    margin-top: 10px;
+    }
+
+#About img, .aboutUs {
     width: 300px;
-    margin: 0 auto;
+    padding:20px;
+    margin: auto;
     }
 }
 
@@ -470,14 +457,12 @@ nav ul{
     min-height: 1000px;
     display: flex;
     flex-wrap: wrap;
-   justify-content: space-evenly;
-}
+    justify-content: space-evenly;
+    }
 #Teachers img, #Teachers p {
     width: 300px;   
-}
-#Teachers img {
-    border-radius: 4px;
-}
+    }
+
 #Teachers p {
     padding: 20px;
     color: #8999a8;
@@ -485,13 +470,9 @@ nav ul{
 
 #Teachers h3 {
     margin: 10px;
-    color: #ff6e83;
-    
 }
 #Teachers h2 {
     padding: 50px 0 80px 0;
-    margin-left: 5%;
-    color: #1381a2;
 }
 
 #Teachers {
@@ -500,14 +481,15 @@ nav ul{
 
 /* Tablet */  
 @media screen and (max-width: 768px) {
-  #Teachers img, #Teachers p {
+#Teachers img, #Teachers p {
     width: 200px;   
 }  
 }
+
 /* Mobile */
 
 @media screen and (max-width: 480px) {
-  #Teachers h2 {
+#Teachers h2 {
     padding-bottom: 50px;
 }  
 }
@@ -515,9 +497,7 @@ nav ul{
 
 
 /* Prices Page */
-#Prices h2{
-margin-left: 5%;
-    color: #1381a2;
+#Prices h2 {
     margin-bottom: 90px;
 }
 
@@ -525,7 +505,6 @@ margin-left: 5%;
     height: 550px;
     background-color: #ff9b99; 
 }
-
 
 #Prices p {
     color: #222;
@@ -535,34 +514,32 @@ margin-left: 5%;
    
 }
 .price > div {
-  
-    margin: 0 auto;
+    margin: auto;
     padding: 40px;
     /*border: 3px solid #ff6e83;*/
-    border-radius: 4px;
     text-align: center;
     width: 200px;
     
 }
 .price > div:hover {  
      -webkit-transform: scale(1.3);
-        -ms-transform: scale(1.3);
-        transform: scale(1.3);
+     -ms-transform: scale(1.3);
+     transform: scale(1.3);
 }
 
 strong {
     font-weight: 700;
 }
-.leaves {
+.price div:nth-child(1) {
     background-image: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)), url(../images/Lotus-At-Om.jpg);
     background-size: cover;
    
 }
-.buddha {
+.price div:nth-child(2) {
     background-image: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)), url(../images/Buddha-At-Om.jpg);
     background-size: cover;
 }
-.stones {
+.price div:nth-child(3) {
     background-image: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)), url(../images/Stones-At-Om.jpg);
     background-size: cover;
 }
@@ -581,7 +558,8 @@ strong {
     margin: 80px 0 50px 40%;
 }
 .Sign:hover {
-    opacity: 0.7;
+    background-color:#ffe803;
+    color: black;
 }
 
 
@@ -600,17 +578,16 @@ strong {
 
 /* Mobile */
 
-@media screen and (max-width: 480px) {
-    .price {
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
+.price {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
     }
-   #Prices {
-       height: 800px;
+#Prices {
+    height: 800px;
     }
     
-    #Prices .Sign {
+#Prices .Sign {
     margin-top: 30px;
 }
 }
@@ -625,8 +602,6 @@ strong {
 }
 #Classes h2 {
     padding: 50px 0 50px 0;
-    color: #1381a2;
-    margin-left: 5%;
 }
 tr, td, th {
     border: 1px solid #fff;
@@ -643,7 +618,7 @@ th {
 }
 
 table {
-    margin: 0 auto;
+    margin: auto;
 }
 
 
@@ -651,17 +626,17 @@ table {
 
 /* Tablet */ 
 @media screen and (max-width: 768px) {
-    #Classes {
+#Classes {
       min-height: 1400px;
 }
-    #Classes h3 {
+#Classes h3 {
         margin-left: 5%;
     }
-    .computertimetable {
+.computertimetable {
         display: none;
     }
   
-    .mobiletimetable {
+.mobiletimetable {
     display: inline-block;
         
     }
@@ -681,9 +656,7 @@ td, th {
 #Classes {
       min-height: 2300px;
 }
-
 }
-
 
 
 
@@ -695,20 +668,14 @@ td, th {
 }
 #Gallery .gallery-flex {
     display: flex;
-  justify-content: center; 
+    justify-content: center; 
     flex-wrap: wrap;
 }
 #Gallery img {
     height: 220px;
-    border-radius: 4px;
     margin: 10px;
 }
-#Gallery h2 {
-    margin-left: 5%;
-}
-#Gallery h2 {
-    color: #1381a2;
-}
+
 
 
 /* Tablet */ 
@@ -727,17 +694,10 @@ td, th {
 /* Contact Page */
 #Contact {
     background-image: linear-gradient(rgba(255,255,255,0.1), rgba(255,255,255,0.1)), url(../images/Contact-At-Om.jpg);
-  background-repeat: no-repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
       
-}
-#Contact h2 {
-    margin-left: 5%;
-    color: #1381a2;
-}
-#Contact h3 {
-    color: #e75367;
 }
 
 #Contact ul{
@@ -752,50 +712,46 @@ td, th {
 .flex-footer {
     display: flex;
     padding: 20px 0;
-    margin-left: 5%;
+    justify-content: space-between;
 }
 
 #googleMap {
     width: 350px;
     height: 400px;
     margin: 20px;
-    border-radius: 4px;
 }
-.contactForm a {
-    text-decoration: none;
-    color: #ff3b77;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 5px;
-}
-.contactForm {
-    padding: 25px;
-    text-align: center;
-}
+
 p.copyright{
     text-align:center;
 }
 
 .contact-form input, .contact-form textarea {
-    margin: 10px 10px 10px 0;
-    padding: 10px;
+    margin: 0 7px 7px 0;
+    padding: 7px;
+}
+.contact-form, .card-wrapper, .sign-newsletter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
-sign-newsletter {
-}
 
 
 /* Tablet */ 
 @media screen and (max-width: 768px) {
     
-    #Contact ul li {
-        align-self: center;
-        margin-top: 10px;
+#Contact ul li {
+    align-self: center;
+    margin-top: 10px;
     }
-    .wrapper{
-        width: 100%;
+.wrapper{
+    width: 100%;
     }
-    #Contact {
-        height: 650px;
+#Contact {
+    height: 650px;
+    }
+.flex-footer {
+    margin-left: 5%;
     }
 }
 
@@ -805,20 +761,19 @@ sign-newsletter {
 .flex-footer {
     display: block;
     }
-    #Contact ul{
-        flex-direction: row;
+#Contact ul{
+    flex-direction: row;
     }
-    #Contact ul li {
-        margin: 0 auto;
+#Contact ul li {
+    margin: auto;
     }
-    #googleMap {
-        margin-top: 30px;
-        width: 300px;
-        height: 300px;
-
+#googleMap {
+    margin-top: 30px;
+    width: 300px;
+    height: 300px;
     }
-    #Contact {
-        height: 1350px;
+#Contact {
+    height: 1350px;
     }
 }
 
@@ -854,15 +809,10 @@ sign-newsletter {
     color: #ff6e83;
 }
 #signUp h2 {
-    color: #1381A2;
     text-align: center;
     padding: 5px;
 }
-.card-wrapper {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
+
 .card-details, input[type="radio"] {
    margin: 5px; 
 }
@@ -881,9 +831,10 @@ sign-newsletter {
 }
 
 .radiobutton {
-     color: #fff;
      padding: 10px;
-    
+}
+.radiobutton, .close, .Newsletter {
+     color: #fff;
 }
 
 select {
@@ -893,7 +844,6 @@ select {
 .close, .Newsletter {
     background-color: #1381a2;
     border-radius: 50px;
-    color: #fff;
     padding: 10px 25px;
     text-align: center;
     display: block;
@@ -905,30 +855,31 @@ select {
     margin-left: 0;
 }
 .sign-newsletter {
-    width: 30%;
+    width: 25%;
+    }
+.sign-newsletter h2 {
+    text-align: center;
 }
 
-#signUp.active, #signNewsletter.active{
+#signUp.active, #signNewsletter.active, .modal-box.active, .sign-newsletter.active {
 visibility:visible;
 }
 
-.modal-box.active, .sign-newsletter.active {
-visibility:visible;
-}
 
 /* Tablet */  
 @media screen and (max-width: 768px) {
-    .modal-box, .sign-newsletter {
+.modal-box, .sign-newsletter {
         width: 50%;
     }
-    #signUp, #signNewsletter {
+#signUp, #signNewsletter {
         padding-top: 90px;
+}  
 }
 
 /* Mobile */
 
 @media screen and (max-width: 480px) {
-    .modal-box, .sign-newsletter {
+.modal-box, .sign-newsletter {
         width: 80%;
     }
 }

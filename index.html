@@ -5,7 +5,7 @@
 <title>AT OM Yoga Studio</title>
 <meta charset="UTF-8">
 <meta name="description" content="Yoga studio in Temple Bar offering classes in different languages (French, Spanish, German, Portuguese, English and Irish). Discounts for students, drop ins welcome!">
-<meta name= "keywords" content="Best, Yoga, Dublin, Temple Bar, Om, Language, Foreign, Wellness, Stress, Anxiety, Vinyasa, Ashtanga, Beginners, French, Spanish, German, Brazilian Portuguese, Gaeilge, Français, Español, Português, Deutsch, City Centre, Missing Home, Student Discounts, Yoga Poses, Near Me, Drop In, Best Yoga Studio in Dublin, Is There a Yoga Studio with Classes in Foreign Languages in Dublin?, Yoga Studio Offering Student Discounts.
+<meta name= "keywords" content="Best, Ireland, Yoga, Dublin, Temple Bar, Om, Language, Foreign, Wellness, Stress, Anxiety, Breathing, Relaxation, Meditation, Vinyasa, Ashtanga, Beginners, French, Spanish, German, Brazilian Portuguese, Gaeilge, Français, Español, Português, Deutsch, City Centre, Missing Home, Student Discounts, Yoga Poses, Near Me, Drop In, Best Yoga Studio in Dublin, Is There a Yoga Studio with Classes in Foreign Languages in Dublin?, Yoga Studio Offering Student Discounts.
 ">
 <meta name="author" content="Camille Puyo">
 <script src="https://use.fontawesome.com/9272d783f7.js"></script>
@@ -19,130 +19,114 @@
     
 <body>
     
-    <header>
+<header>
      
-    <div class="wrapper">
-  
-    <nav class="flex-nav" id="myTopnav">
-       
-       <div class="menu-icon">
-           <i class="fa fa-bars fa-2x"></i>
-        </div>
-
-    <a href="#myTopnav"><img src="images/logoatom.png" alt="logo" class="logo"/></a>
-        <ul> 
-            <li><a href="#About">About Us</a></li>
-            <li><a href="#Teachers">Teachers</a></li>
-            <li><a href="#Prices">Prices</a></li>
-            <li><a href="#Classes">Classes</a></li>
-            <li><a href="#Gallery">Gallery</a></li>
-            <li><a href="#Contact">Contact Us</a></li>
-       </ul>
-    </nav> 
-        </div> 
+ <div class="wrapper">
+  <nav id="myTopnav"> 
+     <div class="menu-icon">
+       <i class="fa fa-bars fa-2x"></i>
+     </div>
+<a href="#myTopnav"><img src="images/logoatom.png" alt="logo" class="logo"/></a>
+  <ul> 
+    <li><a href="#About">About Us</a></li>
+    <li><a href="#Teachers">Teachers</a></li>
+    <li><a href="#Prices">Prices</a></li>
+    <li><a href="#Classes">Classes</a></li>
+    <li><a href="#Gallery">Gallery</a></li>
+    <li><a href="#Contact">Contact Us</a></li>
+  </ul>
+  </nav> 
+ </div> 
         
-         <div class="sidenav" id="mySidenav">
-            <a href="#myTopnav" id="home">&#9900;<span class="tooltiptext">Home</span></a>
-            <a href="#About" id="aboutus">&#9900;<span class="tooltiptext">About Us</span></a>
-            <a href="#Teachers" id="teach">&#9900;<span class="tooltiptext">Teachers</span></a>
-            <a href="#Prices" id="cost">&#9900;<span class="tooltiptext">Prices</span></a>
-            <a href="#Classes" id="times">&#9900;<span class="tooltiptext">Classes</span></a>
-            <a href="#Gallery" id="photos">&#9900;<span class="tooltiptext">Gallery</span></a>
-            <a href="#Contact" id="contactus">&#9900;<span class="tooltiptext">Contact Us</span></a>
-         </div>      
+  <div id="mySidenav">
+    <a href="#myTopnav">&#9900;<span>Home</span></a>
+    <a href="#About">&#9900;<span>About Us</span></a>
+    <a href="#Teachers">&#9900;<span>Teachers</span></a>
+    <a href="#Prices">&#9900;<span>Prices</span></a>
+    <a href="#Classes">&#9900;<span>Classes</span></a>
+    <a href="#Gallery">&#9900;<span>Gallery</span></a>
+    <a href="#Contact">&#9900;<span>Contact Us</span></a>
+  </div>      
  
       
-  <div id="main">
-
-        
-       
-    <div class="flex">  
+<div id="main">
+  <div class="flex">  
         <h1>Feel right at home, learning<br/> yoga in your mother tongue.</h1> 
-         <div>
-            <button class="Sign">Sign Up</button>
-            </div>
-     <div id="signUp"> 
-        <div class="modal-box">
-      <form>
+        <button class="Sign">Sign Up</button>
+            
+   <div id="signUp"> 
+     <form class="modal-box">
           <h2>Sign Up</h2>
     <div class="form-container">
-        <div class="personal-information">
-        <h4>Subscription Chosen:</h4>
-      </div>
+       <h4>Subscription Chosen:</h4>
         <select name="select">
         <option value="Drop In">Drop In</option>
         <option value="Monthly">Monthly</option>
         <option value="Yearly">Yearly</option>  
-    </select><br/>
-<input type="radio" name="radiobutton" value="Student"><span class="radiobutton">Yes I'm a Student, I won't Forget to Bring my ID</span><br>
-<input type="radio" name="radiobutton" value="Full Price"><span class="radiobutton">No I'm not a Student </span>  <br/>
-    <input type="text" name="total" placeholder="Total" class="card-details">
-          
-      <div class="personal-information">
-        <h4>Personal Information</h4>
+        </select><br/>
+        <input type="radio" name="radiobutton" value="Student"><span class="radiobutton">Yes I'm a Student, I won't Forget to Bring my ID</span><br>
+        <input type="radio" name="radiobutton" value="Full Price"><span class="radiobutton">No I'm not a Student </span>  <br/>
+        <input type="text" name="total" placeholder="Total" class="card-details">
+       <h4>Personal Information</h4>
+       <div class="card-wrapper">
+         <input class="card-details" type="text" name="full-name" required="required" autocomplete="on" placeholder="Full Name"/>
+         <input class="card-details" type="email" name="email" required="required" autocomplete="on" placeholder="Email"/>
+         <input class="card-details" type="text" name="number" required="required" autocomplete="on" placeholder="Phone Number"/>
+        <h4>Payment Information</h4>
+         <input class="card-details" type="text" name="name" required="required" placeholder="Name on the Card"/>
+         <input class="card-details" type="text" name="number" required="required" placeholder="Card Number"/>
+         <input class="card-details" type="text" name="expiry" required="required" placeholder="MM / YY"/>
+         <input class="card-details" type="text" name="cvc" required="required" placeholder="CCV"/>
+         <input class="card-details" type="text" name="streetaddress" required="required" autocomplete="on" placeholder="Street Address"/>
+         <input class="card-details" type="text" name="city" required="required" autocomplete="on" placeholder="City"/>
+         <input class="card-details" type="text" name="postcode" required="required" autocomplete="on" placeholder="Eircode"/>
+         <input class="input-button"type="submit" value="Submit"/>
+        </div> 
       </div>
-          <div class="card-wrapper">
-          <input class="card-details" type="text" name="full-name" required="required" autocomplete="on" placeholder="Full Name"/>
-          <input class="card-details" type="email" name="email" required="required" autocomplete="on" placeholder="Email"/>
-          <input class="card-details" type="text" name="number" required="required" autocomplete="on" placeholder="Phone Number"/>
-         <h4>Payment Information</h4>
-          <input class="card-details" type="text" name="name" required="required" placeholder="Name on the Card"/>
-          <input class="card-details" type="text" name="number" required="required" placeholder="Card Number"/>
-          <input class="card-details" type="text" name="expiry" required="required" placeholder="MM / YY"/>
-          <input class="card-details" type="text" name="cvc" required="required" placeholder="CCV"/>
-          <input class="card-details" type="text" name="streetaddress" required="required" autocomplete="on" placeholder="Street Address"/>
-          <input class="card-details" type="text" name="city" required="required" autocomplete="on" placeholder="City"/>
-          <input class="card-details" type="text" name="postcode" required="required" autocomplete="on" placeholder="Eircode"/>
-          
-          <input class="input-button"type="submit" value="Submit"/>
-          </div> 
-        </div>
-    </form>
-            <button class="close">Close</button>
-            </div>
+         <button class="close">Close</button>
+        </form>          
  </div>
-    <div class="social">
-    <ul>
-        <li><img src="images/Facebook.png" alt="Facebook icon"/></li>
-        <li><img src="images/Twitter.png" alt="Twitter icon"/></li>
-        <li><img src="images/Instagram.png" alt="Instagram icon"/></li>
-        <li><img src="images/Snapchat.png" alt="Snapchat icon"/></li>
-        </ul>
-    </div>
-        </div>
-       </div>
-       
-    </header> 
-    
-    <div>
-        <div class="skew">
-    <section id="About">
-        <img src="images/About-At-Om.jpg" alt="couple doing yoga At Om"/>
-    <div class="aboutUs">
-        <h2>About At Om</h2>
-    <p>In our studio, classes take place in different languages. Newcomers to Ireland who don’t feel comfortable with English yet, or homesick expatriates missing their native language, you are all welcome to our practice. <br>The languages we offer at the moment are French, Brazilian Portuguese, German, Spanish, and Irish and English as we are in Ireland after all!
-<br>We also know what it feels like being a student and trying to decide between yoga classes or groceries, which is why we offer you guys discounts!</p>
-       </div>
         
-    </section>
-        </div>
+    <ul class="social">
+      <li><a href="https://www.facebook.com/" target="_blank"><img src="images/Facebook.png" alt="Facebook icon"/></a></li>
+      <li><a href="https://twitter.com/?lang=en" target="_blank"><img src="images/Twitter.png" alt="Twitter icon"/></a></li>
+      <li><a href="https://www.instagram.com/?hl=en" target="_blank"><img src="images/Instagram.png" alt="Instagram icon"/></a></li>
+      <li><a href="https://www.snapchat.com/l/en-gb/" target="_blank"><img src="images/Snapchat.png" alt="Snapchat icon"/></a></li>
+    </ul>
+    
+  </div>
+ </div> 
+</header> 
+    
+    
+<div class="skew">
+  <section id="About">
+     <img src="images/About-At-Om.jpg" alt="couple doing yoga At Om"/>
+    <div class="aboutUs">
+     <h2>About At Om</h2>
+     <p>In our studio, classes take place in different languages. Newcomers to Ireland who don’t feel comfortable with English yet, or homesick expatriates missing their native language, you are all welcome to our practice. <br>The languages we offer at the moment are French, Brazilian Portuguese, German, Spanish, and Irish and English as we are in Ireland after all!
+     <br>We also know what it feels like being a student and trying to decide between yoga classes or groceries, which is why we offer you guys discounts!</p>
     </div>
-    <div class="wrapper">
-    <div class="skew">
-     
+  </section>
+</div>
+    
+    
+    
+<div class="skew"> 
+  <div class="wrapper">
     <section id="Teachers">
-       <h2>Meet Our Teachers</h2>  
-        <div class="teachers">
+       <h2>Meet At Om Teachers</h2>  
+    <div class="teachers">
         <div>
-            <h3>Martine Dupont</h3>
-       <img src="images/French-At-Om.jpg" alt="Martine, French Teacher at At Om Yoga"/>
+        <h3>Martine Dupont</h3>
+        <img src="images/French-At-Om.jpg" alt="Martine, French Teacher at At Om Yoga"/>
         <p>Bonjour! My name is Martine, I've been teaching yoga for 10 years in France and decided to move to Dublin 2 years ago!</p>
         </div>
         
-       <div> 
-     <h3>Enja Senkpiel</h3>
+        <div> 
+        <h3>Enja Senkpiel</h3>
         <img src="images/German-At-Om.jpg" alt="Enja, German Teacher at At Om Yoga"/>
-       <p>Hallo! I'm Enja, a German loving yoga and Ireland! Come join my class, we'll have lots of fun!</p>
+        <p>Hallo! I'm Enja, a German loving yoga and Ireland! Come join my class, we'll have lots of fun!</p>
         </div>
         
         <div>
@@ -152,134 +136,131 @@
         </div>
         
         <div>
-               <h3>Paula Oliveira</h3>
+        <h3>Paula Oliveira</h3>
         <img src="images/Brazilian-At-Om.jpg" alt="Paula, Brazilian Teacher at At Om Yoga"/>
         <p>Olá! My name is Paula, a Brazilian lucky enough to have her dream job for the past 3 years!</p>
         </div>
         
         <div>
-            <h3>Emily Rogers</h3>
+        <h3>Emily Rogers</h3>
         <img src="images/English-At-Om.jpg" alt="Emily, English Teacher at At Om Yoga"/>
         <p>Hello! I'm Emily and I'm passionate about yoga and meditation and love meeting new students!</p>
         </div>
         
         <div>
-            <h3>Aoife O'Connor</h3>
+        <h3>Aoife O'Connor</h3>
         <img src="images/Irish-At-Om.jpg" alt="Aoife, Irish Teacher at At Om Yoga"/>
         <p>Dia dhuit! My name is Aoife, I've been a yoga teacher for 5 years, can't wait to start working with you!</p>
         </div>
-             </div>
-             </section>
-        </div>
-        </div>
-    
-    <div class="skew">
-        
-    <section id="Prices">
-        <div class="wrapper">
-        <h2>Our Prices</h2>
-            
-        <div class="price">   
-        <div class="leaves">
-        <p><strong>Drop In</strong></p>
-        <p>1 hour</p>
-        <p>€15</p>
-        <p>€10 Students</p>
-        </div>
-        
-        <div class="buddha">
-        <p><strong>Monthly</strong></p>
-        <p>Unlimited</p>
-        <p>€100</p>
-        <p>€80 Students</p>
-        </div>
-        
-        <div class="stones">
-        <p><strong>Yearly</strong></p>
-        <p>Unlimited</p>
-        <p>€800</p>
-        <p>€700 Students</p>
-        </div>
-            </div>
-            <button class="Sign">Sign Up</button>
-        </div>
-        
-        
-        
-    </section>
     </div>
+    </section>
+  </div>
+</div>
+    
+<div class="skew">
+  <section id="Prices">
+    <div class="wrapper">
+      <h2>Our Prices</h2>
+        <div class="price"> 
+            
+         <div>
+           <p><strong>Drop In</strong></p>
+           <p>1 hour</p>
+           <p>€15</p>
+           <p>€10 Students</p>
+         </div>
+        
+         <div>
+           <p><strong>Monthly</strong></p>
+           <p>Unlimited</p>
+           <p>€100</p>
+           <p>€80 Students</p>
+         </div>
+        
+         <div>
+           <p><strong>Yearly</strong></p>
+           <p>Unlimited</p>
+           <p>€800</p>
+           <p>€700 Students</p>
+         </div>
+        </div>
+           <button class="Sign">Sign Up</button>
+    </div>
+  </section>
+</div>
         
    
-    <section id="Classes">
-        <div class="wrapper">
-        <h2>Classes</h2>
-      <div class="computertimetable">  <table>
-            <tr>
-                <th>Timetable</th>
-                <th>Monday <br/>Beginners</th>
-                <th>Tuesday <br/>Sun Salutation</th>
-                <th>Wednesday <br/>Advanced</th>
-                <th>Thursday <br/>Vinyasa</th>
-                <th>Friday<br/>Ashtanga</th>
-                <th>Saturday<br/>Flow</th>
-            </tr>
-            <tr>
-             <th>9am - 10am</th>   
-                <td>French</td>
-                <td>Portuguese</td>
-                <td>German</td>
-                <td>Spanish</td>
-                <td>Irish</td>
-                <td>English</td>
-            </tr>
-            <tr>
-                <th>11am - 12pm</th>
-                <td>English</td>
-                <td>French</td>
-                <td>Portuguese</td>
-                <td>German</td>
-                <td>Spanish</td>
-                <td>Irish</td>
-            </tr>
-            <tr>
-                <th>1pm - 1.30pm</th>
-                <td>Irish</td>
-                <td>English</td>
-                <td>French</td>
-                <td>Portuguese</td>
-                <td>German</td>
-                <td>Spanish</td>
-            </tr>
-            <tr>
-                <th>2.30pm - 3.30pm</th>
-                <td>Spanish</td>
-                <td>Irish</td>
-                <td>English</td>
-                <td>French</td>
-                <td>Portuguese</td>
-                <td>German</td>
-            </tr>
-            <tr>
-                <th>4pm - 5pm</th>
-                <td>German</td>
-                <td>Spanish</td>
-                <td>Irish</td>
-                <td>English</td>
-                <td>French</td>
-                <td>Portuguese</td>
-            </tr>
-            <tr>
-                <th>7pm - 8pm</th>
-                <td>Portuguese</td>
-                <td>German</td>
-                <td>Spanish</td>
-                <td>Irish</td>
-                <td>English</td>
-                <td>French</td>
-            </tr>
-        </table>
-          </div>
-        <div class="mobiletimetable">
+<section id="Classes">
+  <div class="wrapper">
+    <h2>Our Classes</h2>
+      <div class="computertimetable">  
+       <table>
+         <tr>
+           <th>Timetable</th>
+           <th>Monday <br/>Beginners</th>
+           <th>Tuesday <br/>Sun Salutation</th>
+           <th>Wednesday <br/>Advanced</th>
+           <th>Thursday <br/>Vinyasa</th>
+           <th>Friday<br/>Ashtanga</th>
+           <th>Saturday<br/>Flow</th>
+         </tr>
+         <tr>
+           <th>9am - 10am</th>   
+             <td>French</td>
+             <td>Portuguese</td>
+             <td>German</td>
+             <td>Spanish</td>
+             <td>Irish</td>
+             <td>English</td>
+         </tr>
+         <tr>
+           <th>11am - 12pm</th>
+             <td>English</td>
+             <td>French</td>
+             <td>Portuguese</td>
+             <td>German</td>
+             <td>Spanish</td>
+             <td>Irish</td>
+          </tr>
+          <tr>
+            <th>1pm - 1.30pm</th>
+              <td>Irish</td>
+              <td>English</td>
+              <td>French</td>
+              <td>Portuguese</td>
+              <td>German</td>
+              <td>Spanish</td>
+          </tr>
+          <tr>
+            <th>2.30pm - 3.30pm</th>
+              <td>Spanish</td>
+              <td>Irish</td>
+              <td>English</td>
+              <td>French</td>
+              <td>Portuguese</td>
+              <td>German</td>
+         </tr>
+         <tr>
+           <th>4pm - 5pm</th>
+             <td>German</td>
+             <td>Spanish</td>
+             <td>Irish</td>
+             <td>English</td>
+             <td>French</td>
+             <td>Portuguese</td>
+         </tr>
+         <tr>
+           <th>7pm - 8pm</th>
+             <td>Portuguese</td>
+             <td>German</td>
+             <td>Spanish</td>
+             <td>Irish</td>
+             <td>English</td>
+             <td>French</td>
+         </tr>
+       </table>
+      </div>
+<div class="mobiletimetable">
           
                <h3>Monday - Beginners</h3>
              <div>
@@ -526,111 +507,97 @@
             </table>
                 </div>
         </div>
-            <button class="Sign">Sign Up</button>
-        </div>
-
-    </section>
+    <button class="Sign">Sign Up</button>
+  </div>
+</section>
     
-    <section id="Gallery">
-        <div class="wrapper">
-        <h2>Gallery</h2>
-            <div class="gallery-flex">
-        <a href="images/Downward-Dog-At-Om.jpg" data-lightbox="yoga"><img src="images/Downward-Dog-At-Om.jpg" alt="Downward Facing Dog Pose At Om"/></a>
-        <a href="images/Advanced-Pose-At-Om.jpg" data-lightbox="yoga"><img src="images/Advanced-Pose-At-Om.jpg" alt="Advanced Pose At Om"/></a>
-        <a href="images/Upward-Dog-At-Om.jpg" data-lightbox="yoga"><img src="images/Upward-Dog-At-Om.jpg" alt="Upward Facing Dog Pose At Om"/></a>
-        <a href="images/Yoga-Pose-At-Om.jpg" data-lightbox="yoga"><img src="images/Yoga-Pose-At-Om.jpg" alt="Yoga Pose At Om"/></a>
-        <a href="images/Yoga-Stretch-At-Om.jpg" data-lightbox="yoga"><img src="images/Yoga-Stretch-At-Om.jpg" alt="Time To Stretch At Om"/></a>
-        <a href="images/Vakrasana.jpg" data-lightbox="yoga"><img src="images/Vakrasana.jpg" alt="Vakrasana At Om"/></a>
-        <a href="images/Headstand.jpg" data-lightbox="yoga"><img src="images/Headstand.jpg" alt="Headstand At Om"/></a>
-        <a href="images/Vriksasana.jpg" data-lightbox="yoga"><img src="images/Vriksasana.jpg" alt="Vriksasana At Om"/></a>
-        <a href="images/Meditation-At-Om.jpg" data-lightbox="yoga"><img src="images/Meditation-At-Om.jpg" alt="Meditation At Om"/></a>
-       </div>
-            </div>
-        
-    </section>
-     
-    <footer id="Contact">
-        <div class="wrapper">
-          <h2>Get In Touch</h2>    
-            <div class="flex-footer">
-              
-            <div class="address">
-        <h3>Contact Details</h3>
-            <p>18 Temple Ln S, Temple Bar, Dublin 2</p>
-            <p>+353 (01) 461 2811</p>
-            <p>@ AtOmYoga@gmail.com</p>
-                <h3>Opening Hours</h3>
-                <p>Monday-Saturday: 9am- 8pm</p>
-                <p>Closed Sundays</p>
-                <h3>Find Us On:</h3>
-        <ul class="media">
-        <li><img src="images/Facebook.png" alt="Facebook icon"/></li>
-        <li><img src="images/Twitter.png" alt="Twitter icon"/></li>
-        <li><img src="images/Instagram.png" alt="Instagram icon"/></li>
-        <li><img src="images/Snapchat.png" alt="Snapchat icon"/></li>
-        </ul>
-                <h3>Sign Up To Our Newsletter:</h3>
-                <button class="Newsletter">Sign Up</button>
-              
-                <form id="signNewsletter">
-                <div class="sign-newsletter">
-        <h2>Sign Up To Our Newsletter</h2>
-                    <h4>Your Information</h4>
-                <input class="card-details" id="firstName" type="text" name="first-name" required="required" autocomplete="on" placeholder="First Name"/><br/>
-                    <input class="card-details" id="laststName" type="text" name="last-name" required="required" autocomplete="on" placeholder="Last Name"/><br/>
-          <input class="card-details" type="email" name="email" required="required" autocomplete="on" placeholder="Email"/><br/>
-                    <button class="input-button" id="execute">Submit</button> 
-                    <h2 id="playback"></h2>
-                    <button class="close">Close</button>
-                </div>
-                    </form>
-                </div> 
-            <div id="googleMap"></div>
-             <div class="contact-form">
-                 <h3>We'd Love to Hear From You</h3>
-          <input type="text" name="first-name" placeholder="First Name"/><br/>
-          <input type="text" name="last-name" placeholder="Surname"/><br/>
-          <input type="email" name="email" required="required" placeholder="Email"/><br/>
-          <input type="text" name="number" placeholder="Phone Number"/><br/>
-          <textarea name="question" cols="19" rows="5" placeholder="How Can We Help?"></textarea><br/>
-          <input class="input-button" type="submit" value="Submit"/>
-              </div>
-        
-               
-            
-                
-        
+<section id="Gallery">
+  <div class="wrapper">
+    <h2>Gallery</h2>
+   <div class="gallery-flex">
+    <a href="images/Downward-Dog-At-Om.jpg" data-lightbox="yoga"><img src="images/Downward-Dog-At-Om.jpg" alt="Downward Facing Dog Pose At Om"/></a>
+    <a href="images/Advanced-Pose-At-Om.jpg" data-lightbox="yoga"><img src="images/Advanced-Pose-At-Om.jpg" alt="Advanced Pose At Om"/></a>
+    <a href="images/Upward-Dog-At-Om.jpg" data-lightbox="yoga"><img src="images/Upward-Dog-At-Om.jpg" alt="Upward Facing Dog Pose At Om"/></a>
+    <a href="images/Yoga-Pose-At-Om.jpg" data-lightbox="yoga"><img src="images/Yoga-Pose-At-Om.jpg" alt="Yoga Pose At Om"/></a>
+    <a href="images/Yoga-Stretch-At-Om.jpg" data-lightbox="yoga"><img src="images/Yoga-Stretch-At-Om.jpg" alt="Time To Stretch At Om"/></a>
+    <a href="images/Vakrasana.jpg" data-lightbox="yoga"><img src="images/Vakrasana.jpg" alt="Vakrasana At Om"/></a>
+    <a href="images/Headstand.jpg" data-lightbox="yoga"><img src="images/Headstand.jpg" alt="Headstand At Om"/></a>
+    <a href="images/Vriksasana.jpg" data-lightbox="yoga"><img src="images/Vriksasana.jpg" alt="Vriksasana At Om"/></a>
+    <a href="images/Meditation-At-Om.jpg" data-lightbox="yoga"><img src="images/Meditation-At-Om.jpg" alt="Meditation At Om"/></a>
    </div>
-        
+  </div>   
+</section>
+     
+<footer id="Contact">
+  <div class="wrapper">
+    <h2>Get In Touch</h2>    
+   <div class="flex-footer">
+              
+   <div class="address">
+    <h3>Contact Details</h3>
+      <p>18 Temple Ln S, Temple Bar, Dublin 2</p>
+      <p>+353 (01) 461 2811</p>
+      <p>@ AtOmYoga@gmail.com</p>
+    <h3>Opening Hours</h3>
+      <p>Monday-Saturday: 9am- 8pm</p>
+      <p>Closed Sundays</p>
+    <h3>Find Us On:</h3>
+      <ul class="media">
+       <li><a href="https://www.facebook.com/" target="_blank"><img src="images/Facebook.png" alt="Facebook icon"/></a></li>
+       <li><a href="https://twitter.com/?lang=en" target="_blank"><img src="images/Twitter.png" alt="Twitter icon"/></a></li>
+       <li><a href="https://www.instagram.com/?hl=en" target="_blank"><img src="images/Instagram.png" alt="Instagram icon"/></a></li>
+       <li><a href="https://www.snapchat.com/l/en-gb/" target="_blank"><img src="images/Snapchat.png" alt="Snapchat icon"/></a></li>
+      </ul>
+     <h3>Sign Up To Our Newsletter:</h3>
+       <button class="Newsletter">Sign Up</button>
+              
+    <form id="signNewsletter">
+      <div class="sign-newsletter">
+        <h2>Sign Up To Our Newsletter</h2>
+          <h4>Your Information</h4>
+            <input class="card-details" id="firstName" type="text" name="first-name" required="required" autocomplete="on" placeholder="First Name"/><br/>
+            <input class="card-details" id="laststName" type="text" name="last-name" required="required" autocomplete="on" placeholder="Last Name"/><br/>
+            <input class="card-details" type="email" name="email" required="required" autocomplete="on" placeholder="Email"/><br/>
+              <button class="input-button" id="execute">Submit</button> 
+        <h2 id="playback"></h2>
+              <button class="close">Close</button>
+      </div>
+    </form>
+   </div> 
+       
+   <div id="googleMap"></div>
+    <form class="contact-form">
+          <h3>We'd Love to Hear From You</h3>
+           <input class="firstName" type="text" name="first-name" placeholder="First Name"/><br/>
+           <input type="text" name="last-name" placeholder="Surname"/><br/>
+           <input type="email" name="email" required="required" placeholder="Email"/><br/>
+           <input type="text" name="number" placeholder="Phone Number"/><br/>
+           <textarea name="question" cols="19" rows="5" required="required" placeholder="How Can We Help?"></textarea><br/>
+           <input class="input-button" type="submit" value="Submit"/>
+          <h3 id="thanks"></h3>
+    </form>    
+   </div>
        <p class="copyright"><i class="fa fa-copyright" aria-hidden="true"></i> 2018 At Om Yoga. All Rights Reserved.</p>     
-     </div>  
-        
-    </footer>
+  </div>  
+</footer>
     
     
     
-    
-    
-        
-    
-    
-    
-    
-    
-   <script src="js/lightbox-plus-jquery.js"></script>  
-    <script>
-function myMap() {
-  var myCenter = new google.maps.LatLng(53.345341,-6.264249);
-  var mapCanvas = document.getElementById("googleMap");
-  var mapOptions = {center: myCenter, zoom: 15};
-  var map = new google.maps.Map(mapCanvas, mapOptions);
-  var marker = new google.maps.Marker({position:myCenter});
-  marker.setMap(map);
-}
-</script>
   
-   
+    
+ <script src="js/lightbox-plus-jquery.js"></script>  
+ <script>
+  function myMap() {
+   var myCenter = new google.maps.LatLng(53.345341,-6.264249);
+   var mapCanvas = document.getElementById("googleMap");
+   var mapOptions = {center: myCenter, zoom: 15};
+   var map = new google.maps.Map(mapCanvas, mapOptions);
+   var marker = new google.maps.Marker({position:myCenter});
+   marker.setMap(map);
+  }
+ </script>
  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDaBEghP98rswrzDkmvq-fxxBswkoyDlQQ&callback=myMap"></script>
-    <script src="js/custom.js"></script>
-    </body>
+ <script src="js/custom.js"></script>
+    
+</body>
 </html>

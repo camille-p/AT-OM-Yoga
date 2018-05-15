@@ -32,4 +32,13 @@ $(".close").on("click", function(){
 $("form#signNewsletter").on("submit", function() {
    var first_name = $("input#firstName").val();
     $("h2#playback").text("Thank You " + first_name + " ");
+    event.preventDefault();
+});
+
+//When asking a question
+
+$("form.contact-form").on("submit", function() {
+   var first_name = $("input.firstName").val();
+    $("h3#thanks").text("Thank You " + first_name + " ");
+    event.preventDefault();
 });
