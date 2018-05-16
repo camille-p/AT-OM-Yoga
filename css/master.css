@@ -121,9 +121,9 @@ nav ul li a:hover {
     width: 100%;
     background-color: #e8e9eb;
     text-align: right;
-    padding: 35px 15px;
+    padding: 30px 15px;
     cursor: pointer;
-    height: 90px;
+    height: 80px;
     display: none;
     border-bottom:#dddddd 1px solid;
 }
@@ -248,12 +248,12 @@ h1 {
 @media screen and (max-width: 768px) {
 
 .logo {
-     height: 100px;
+     height: 90px;
      padding: 10px;
     }
 
 nav li a {
-    line-height: 80px;
+    line-height: 70px;
     font-size: 16px;
 }
 nav li {
@@ -301,7 +301,7 @@ h1 {
 
 @media screen and (max-width: 480px) {
 .logo {
-    height: 90px;
+    height: 80px;
     position: absolute;
     top: 0;
     left: 0;
@@ -506,7 +506,7 @@ h1 {
 }
 
 #Prices p {
-    color: #222;
+    color: #fff;
 }
 .price {
    display: flex;
@@ -530,16 +530,16 @@ strong {
     font-weight: 700;
 }
 .price div:nth-child(1) {
-    background-image: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)), url(../images/Lotus-At-Om.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/Lotus-At-Om.jpg);
     background-size: cover;
    
 }
 .price div:nth-child(2) {
-    background-image: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)), url(../images/Buddha-At-Om.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../images/Buddha-At-Om.jpg);
     background-size: cover;
 }
 .price div:nth-child(3) {
-    background-image: linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)), url(../images/Stones-At-Om.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/Stones-At-Om.jpg);
     background-size: cover;
 }
 
@@ -555,6 +555,7 @@ strong {
     font-size: 16px;
     cursor: pointer;
     margin: 80px 0 50px 40%;
+    border: none;
 }
 .Sign:hover {
     background-color:#ffe803;
