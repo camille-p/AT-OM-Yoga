@@ -565,7 +565,9 @@ strong {
 
 /* Tablet */  
 @media screen and (max-width: 768px) {
-    
+ #Prices {
+    height: 450px;
+    }   
 .price > div {
      margin: 20px;
      padding: 30px;
@@ -577,7 +579,7 @@ strong {
 }
 
 /* Mobile */
-
+@media screen and (max-width: 480px) {
 .price {
     display: flex;
     flex-direction: column; 
@@ -807,6 +809,7 @@ p.copyright{
 #signUp h4, .sign-newsletter h4 {
     padding: 10px 10px 10px 0;
     color: #ff6e83;
+    font-size:18px;
 }
 #signUp h2 {
     text-align: center;
