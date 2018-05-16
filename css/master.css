@@ -717,7 +717,7 @@ td, th {
 }
 
 #googleMap {
-    width: 350px;
+    width: 370px;
     height: 400px;
     margin: 20px;
 }
@@ -742,7 +742,7 @@ p.copyright{
 @media screen and (max-width: 768px) {
     
 #Contact ul li {
-    align-self: center;
+    align-self: flex-start;
     margin-top: 10px;
     }
 .wrapper{
@@ -764,18 +764,23 @@ p.copyright{
     }
 #Contact ul{
     flex-direction: row;
+    
     }
-#Contact ul li {
+    #Contact ul li {
     margin: auto;
     }
+#Contact ul li:first-child {
+    margin-left: 0;
+    }
 #googleMap {
-    margin-top: 30px;
+    margin: 30px 5px 5px 0;
     width: 280px;
     height: 300px;
     }
 #Contact {
-    height: 1350px;
+    height: 1355px;
     }
+
 }
 
 
