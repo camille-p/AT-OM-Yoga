@@ -284,8 +284,8 @@ h1 {
     margin-bottom:60px;
 }
     #main .social img {
-    height: 40px;
-    margin: 5px 5px 100px 5px;
+    height: 60px;
+    margin: 5px 10px 100px 10px;
     
 }
     #main ul{
@@ -366,7 +366,6 @@ nav li a {
     margin-top: 0;
     } 
 #main .social img {
-    height: 45px;
     margin: 50px 15px; 
     }
 
@@ -875,7 +874,7 @@ visibility:visible;
         width: 50%;
     }
 #signUp, #signNewsletter {
-        padding-top: 90px;
+        padding-top: 120px;
 }  
 }
 
