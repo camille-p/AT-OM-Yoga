@@ -833,6 +833,7 @@ p.copyright{
     padding: 5px;
     border-radius: 50px;
     cursor: pointer;
+    border: none;
 }
 .form-container {
     padding: 20px;
@@ -858,6 +859,7 @@ select {
     font-size: 16px;
     margin: 0 auto;
     cursor: pointer;
+    border:none;
 }
 .address .Newsletter {
     margin-left: 0;
