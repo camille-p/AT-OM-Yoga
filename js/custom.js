@@ -31,7 +31,7 @@ $(".close").on("click", function(){
 
 $("form#signNewsletter").on("submit", function() {
    var first_name = $("input#firstName").val();
-    $("h2#playback").text("Thank You " + first_name + " ");
+    $("div#playback").text("Thank You " + first_name + " ");
     event.preventDefault();
 });
 
@@ -39,6 +39,6 @@ $("form#signNewsletter").on("submit", function() {
 
 $("form.contact-form").on("submit", function() {
    var first_name = $("input.firstName").val();
-    $("h3#thanks").text("Thank You " + first_name + " ");
+    $("div#thanks").text("Thank You " + first_name + " ");
     event.preventDefault();
 });
