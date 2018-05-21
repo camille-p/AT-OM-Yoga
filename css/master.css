@@ -556,9 +556,13 @@ strong {
     display: inline-block;
     font-size: 16px;
     cursor: pointer;
-    margin: 80px 0 50px 40%;
+    margin: 80px 0 50px 0;
     border: none;
     text-align: center;
+}
+.center{
+  width: 100%;
+  text-align: center;
 }
 
 .Sign:hover {
@@ -873,6 +877,9 @@ select {
     margin: 0 auto;
     cursor: pointer;
     border:none;
+}
+.close {
+    margin-top: 15px;
 }
 .address .Newsletter {
     margin-left: 0;
