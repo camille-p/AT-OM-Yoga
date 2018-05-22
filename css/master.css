@@ -48,7 +48,7 @@ p {
     }
 
 /* Left Margins */
-#Teachers h2, #Prices h2, #Classes h2, #Gallery h2, #Contact h2  {
+#Teachers h2, #Prices h2, #Classes h2, #Gallery h2  {
     margin-left: 5%;
 }
 
@@ -453,7 +453,7 @@ h1 {
 
 /* Teachers Page */
 .teachers {
-    min-height: 1000px;
+    min-height: 800px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -465,7 +465,8 @@ h1 {
     margin: 5px;
 }
 #Teachers p {
-    padding: 20px;
+    text-align: center;
+    padding-top: 60px;
     color: #8999a8;
 }
 
@@ -480,20 +481,60 @@ h1 {
     padding-bottom: 50px;
 }
 
+.teacher_container {
+  position: relative;
+  margin: 10px auto;
+  width: 300px;
+  height: 281px;
+  z-index: 1;
+  perspective: 1000;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+.teacher_container:hover .card {
+  transform: rotateY(180deg);
+}
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #222;
+}
+
 /* Tablet */  
 @media screen and (max-width: 768px) {
+    .teachers {
+    min-height: 700px;
+    }
 #Teachers img, #Teachers p {
     width: 200px;   
-}  
+} 
+   
+.teacher_container {
+  position: relative;
+  margin: 10px auto;
+  width: 200px;
+  z-index: 1;
+        }
+#Teachers p {
+    padding: 20px;
+
+}
 }
 
-/* Mobile */
-
-@media screen and (max-width: 480px) {
-#Teachers h2 {
-    padding-bottom: 50px;
-}  
-}
 
 
 
@@ -917,3 +958,4 @@ visibility:visible;
         width: 80%;
     }
 }
+

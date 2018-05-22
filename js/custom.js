@@ -13,7 +13,7 @@ $(".Sign").on("click", function(){
   $("#signUp, .modal-box").addClass("active");
 });
 
-$(".close").on("click", function(){
+$(".close, #signUp").on("click", function(){
   $("#signUp, .modal-box").removeClass("active");
 });
 
@@ -25,7 +25,7 @@ $(".Newsletter").on("click", function(){
   $("#signNewsletter, .sign-newsletter").addClass("active");
 });
 
-$(".close").on("click", function(){
+$(".close, #signNewsletter").on("click", function(){
  $("#signNewsletter, .sign-newsletter").removeClass("active");
 });
 
@@ -42,3 +42,8 @@ $("form.contact-form").on("submit", function() {
     $("div#thanks").text("Thank You " + first_name + " ");
     event.preventDefault();
 });
+
+
+
+
+
