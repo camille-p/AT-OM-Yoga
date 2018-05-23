@@ -769,7 +769,7 @@ p.copyright{
 #Contact {
     height: 650px;
     }
-.flex-footer {
+.flex-footer, #Contact h2 {
     margin-left: 5%;
     }
 }
