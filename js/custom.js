@@ -13,7 +13,7 @@ $(".Sign").on("click", function(){
   $("#signUp, .modal-box").addClass("active");
 });
 
-$(".close, #signUp").on("click", function(){
+$(".close").on("click", function(){
   $("#signUp, .modal-box").removeClass("active");
 });
 
